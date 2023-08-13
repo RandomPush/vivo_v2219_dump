@@ -1,0 +1,19 @@
+<manifest version="1.0" type="framework">
+    <hal>
+        <name>android.frameworks.vivocameraservice.service</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IVivoCameraService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+          <name>android.frameworks.vivocameraservice.service</name>
+          <version>1</version>
+          <interface>
+              <name>IVivoCameraService</name>
+              <instance>default</instance>
+         </interface>
+    </hal>
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <product model="PD2283F_EX">
+      <item hardware_id="00" rf_bit_index="4,5" />
+  </product>
+</config>

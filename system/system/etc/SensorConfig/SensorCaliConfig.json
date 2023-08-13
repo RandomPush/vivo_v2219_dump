@@ -1,0 +1,21 @@
+{
+ "UseOpticsCali": 0,
+ "DoubleUnderProx": 0,
+ "SingleUnderProx": 0,
+ "DoubleScreenUnderProx": 0,
+ "UseSectionCali": 0,
+ "UseCCTCali": 1,
+ "UseMagCali": 1,
+ "SectionCaliWriteBackToNv": 0,
+ "SendPsOffset": 1,
+ "ExpectPsOffsetValue": -1,
+ "DefaultLongBaseValueFrontValue": 0,
+ "DefaultLongBaseValueBackValue": 4000,
+ "DefaultShortBaseValueFrontValue": 400,
+ "DefaultShortBaseValueBackValue": 8000,
+ "DefaultBaseLowValue": 300,
+ "DefaultBaseValue": 300,
+ "ProxPositiveSuspendDelayTime": [300,400,800],
+ "ProxPositiveForeGroundDelayTime": 300,
+ "ProxPositiveBackGroundDelayTime":[300,400,800]
+}

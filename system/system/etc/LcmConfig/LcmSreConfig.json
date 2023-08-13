@@ -1,0 +1,38 @@
+[
+    {
+        "project":[ "PD2242F_EX" ],
+        "sreConfigStatus": "true",
+        "Version": 4,
+        "hbmMap": [ 3515, 3715, 3865, 4010, 4095, 4095, 4095 ],
+        "hbmUpLuxLevel": [ 20000, 30000, 40000, 60000, 80000, 100000 ],
+        "hbmDownLuxLevel": [ 10000, 20000, 30000, 40000, 60000, 80000 ],
+        "hbmLimitTime": 15,
+        "transitionPoint": 16383,
+        "hdrBrightnessLimit": 4095,
+        "upLuxDelay": 2500,
+        "downLuxDelay": 3500,
+        "hdrCoeff": [
+				{
+					"index" : 0,
+					"formula" : "y = x + coeffA",
+					"lowerLimit" : 0,
+					"upperLimit" : 120,
+					"coeffA": 120
+				},
+				{
+					"index" : 1,
+					"formula" : "y = coeffA * x",
+					"lowerLimit" : 121,
+					"upperLimit" : 580,
+					"coeffA": 2
+				},
+				{
+					"index" : 2,
+					"formula" : "y= x + coeffA",
+					"lowerLimit" : 581,
+					"upperLimit" : 3515,
+					"coeffA": 580
+				}
+        ]
+    }
+]

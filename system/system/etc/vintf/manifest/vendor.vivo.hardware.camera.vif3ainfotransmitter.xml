@@ -1,0 +1,14 @@
+<!--
+Copyright 2022 vivo, Inc.
+All Rights Reserved
+Confidential and Proprietary - vivo, Inc.
+-->
+<manifest version="1.0" type="framework">
+    <hal format="aidl">
+        <name>vendor.vivo.hardware.camera.vif3ainfotransmitter</name>
+        <version>1</version>
+        <interface>
+            <name>IVIF3AInfoCallback</name>
+        </interface>
+    </hal>
+</manifest>

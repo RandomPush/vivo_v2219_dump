@@ -1,0 +1,34 @@
+{
+"userBrList" : [ "com.android.systemui", "com.android.settings", "com.vivo.upslide",
+                    "com.vivo.agent", "com.vivo.base.agent", "com.google.android.marvin.talkback",
+                    "com.vivo.gamecube" ],
+
+"autoBrightWhiteList" : ["com.android.systemui", "com.android.settings",
+                            "com.vivo.upslide", "com.bbk.SuperPowerSave", "com.iqoo.powersaving", "com.iqoo.engineermode",
+                            "com.vivo.easyshare", "com.bbk.scene.indoor", "com.vivo.childrenmode", "com.qihoo360.ilauncher",
+                            "com.gau.go.launcherex", "com.apusapps.launcher", "com.dianxinos.dxhome", "com.nd.android.pandahome2",
+                            "com.moxiu.launcher", "com.Dean.launcher", "com.zeroteam.zerolauncher", "com.fhhr.launcherEx",
+                            "com.kk.launcher", "com.lo.launcher", "com.vivo.agent", "com.vivo.base.agent", "com.kugou.launcher", "com.nearme.launcher",
+                            "com.ouchn.desktop", "com.android.shell", "root", "com.vivo.udfingerprint", "com.iqoo.secure",
+                            "com.vivo.fingerprintui", "com.raybin.helloworld", "com.google.android.marvin.talkback", "com.vivo.lts",
+                            "com.vivo.gamecube" ],
+
+"appCurveList" : ["com.tencent.tmgp.pubgm", "com.tencent.tmgp.sgame" ],
+
+"phoneAppList" : ["com.android.incallui", "com.tencent.mm", "com.tencent.mobileqq",
+                    "com.facebook.orca", "com.bbm", "com.viber.voip", "jp.naver.line.android", "com.whatsapp",
+                    "org.telegram.messenger", "com.zing.zalo", "com.snapchat.android", "com.imo.android.imoim",
+                    "com.truecaller", "com.google.android.dialer", "com.hunting.matrix_callershow", "com.discord",
+                    "com.tencent.tim", "com.vivo.dialer" ],
+
+"adjWhileList" : ["com.android.systemui", "com.android.settings", "com.vivo.upslide",
+                    "com.iqoo.engineermode", "com.android.shell", "root", "com.ouchn.desktop",
+                    "com.vivo.gamecube" ],
+
+"autoBrightModeWhiteList" : [ "com.android.systemui", "com.android.settings", "android",
+        "com.vivo.childrenmode", "com.iqoo.engineermode", "com.iqoo.aftersale.engineermode", "com.android.shell",
+        "com.vivo.lts", "com.vivo.easyshare", "com.android.camera", "com.iqoo.secure", "com.vivo.bsptest",
+        "com.vivo.imanager", "com.vivo.upslide", "com.bbk.SuperPowerSave", "com.iqoo.powersaving",
+        "com.bbk.scene.indoor", "com.vivo.agent", "com.vivo.base.agent", "com.vivo.udfingerprint", "com.vivo.fingerprintui",
+        "com.vivo.engineercamera","root", "com.vivo.gamecube", "com.vos.as.vit" ]
+}
