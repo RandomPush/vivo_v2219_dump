@@ -1,0 +1,1777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The source code provided herein is for optimizing power and performance of gaming software
+and certain applications (e.g. Sina Weibo, QQ) only and should not be used and/or included in
+any software that is unrelated to enhancing end-user experience. -->
+<WHITELIST>
+    <Package name="com.tencent.tmgp.sgame">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="54"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="59"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="68"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTBV2_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_FILTER_FRAME_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_AA_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_LR_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_QUOTA_PCT" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_EMA2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                    <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="90">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="40"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="120">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_GCC_FPS_MARGIN_BY_PID" param1="-150"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="1000000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="40"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ_M" param1="2200000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ_M" param1="2600000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ" param1="2000000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ" param1="2400000"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.sgamece">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="54"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="59"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="68"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTBV2_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_FILTER_FRAME_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_AA_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_LR_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_QUOTA_PCT" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_EMA2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                    <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_MAGT_ADVICE_BAT_AVG_CURRENT" param1="1100"></data>
+                    <data cmd="PERF_RES_MAGT_ADVICE_BAT_MAX_CURRENT" param1="1300"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="120">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_GCC_FPS_MARGIN_BY_PID" param1="-150"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="1200000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.protopop.brightridge">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.bh3">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="63"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="81"></data>
+                    <data cmd="PERF_RES_FPS_GBE1_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_DSU_HINT" param1="2"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTB_GPU_SLOWDOWN_CHECK" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.bh3.vivo">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="63"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="81"></data>
+                    <data cmd="PERF_RES_FPS_GBE1_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_DSU_HINT" param1="2"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTB_GPU_SLOWDOWN_CHECK" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.netease.aceracer.vivo">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FSTB_GPU_SLOWDOWN_CHECK" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.enterprise.NGHSoD">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ2CAP_M_BY_PID" param1="2600000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ2CAP_BY_PID" param1="2300000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ2CAP_BY_PID" param1="2400000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="1800000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2850000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="3050000"></data>
+                    <data cmd="PERF_RES_FPS_GBE1_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_DSU_HINT" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FSTB_GPU_SLOWDOWN_CHECK" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.enterprise.NGHSoDBeta">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ2CAP_M_BY_PID" param1="2600000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ2CAP_BY_PID" param1="2300000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ2CAP_BY_PID" param1="2400000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="1800000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2850000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="3050000"></data>
+                    <data cmd="PERF_RES_FPS_GBE1_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_DSU_HINT" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FSTB_GPU_SLOWDOWN_CHECK" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.Yuanshen">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTBV2_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_MIN_FPS" param1="30"></data>
+                    <data cmd="PERF_RES_FPS_FBT_FILTER_FRAME_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_AA_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_LR_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_SEC_PCT_BY_PID" param1="5"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_SEC_PCT_BY_PID" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP_BY_PID" param1="10"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FRS_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_TZ_INDEX" param1="39"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_THRESHOLD" param1="5"></data>
+                    <data cmd="PERF_RES_FRS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_GBE_CPU_0" param1="1500000"></data>
+                    <data cmd="PERF_RES_FPS_GBE_CPU_1" param1="2000000"></data>
+                    <data cmd="PERF_RES_FPS_GBE_POLICY_MASK" param1="384"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_TIMER2_MS" param1="3000"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_MAX_BOOST_CNT" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_TIMER1_MS" param1="500"></data>
+                    <data cmd="PERF_RES_FPS_FBT_MINITOP_THRS_HEAVY" param1="101"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_QUOTA_PCT" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_EMA2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_RECLAIM_POLICY" param1="1"></data>
+					<data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                </WINDOW>
+                <WINDOW mode="Single">
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="900000"></data>
+					<data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ" param1="2400000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ" param1="3000000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ_M" param1="2400000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ_M" param1="2800000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="2"></data>
+                </WINDOW>
+                <WINDOW mode="Multi">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="92"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="88"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.hkrpg">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FRS_MIN_FPS" param1="43"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="61"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="61"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ_M" param1="2600000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ_M" param1="2600000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ" param1="2400000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ" param1="2400000"></data>
+                    <data cmd="PERF_RES_FRS_LIMIT_CFREQ_M" param1="2000000"></data>
+                    <data cmd="PERF_RES_FRS_LIMIT_RFREQ_M" param1="2000000"></data>
+                    <data cmd="PERF_RES_FRS_LIMIT_CFREQ" param1="1800000"></data>
+                    <data cmd="PERF_RES_FRS_LIMIT_RFREQ" param1="2000000"></data>
+                    <data cmd="PERF_RES_FRS_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_TZ_INDEX" param1="39"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_THRESHOLD" param1="5"></data>
+                    <data cmd="PERF_RES_FRS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_RECLAIM_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="1"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="900000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_FPS_MARGIN_BY_PID" param1="-500"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.lolm">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="54"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="59"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="68"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTBV2_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_FILTER_FRAME_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_AA_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_LR_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_QUOTA_PCT" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_EMA2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                    <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="120">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_GCC_FPS_MARGIN_BY_PID" param1="-100"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.riotgames.league.wildrift">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="54"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="59"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="68"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTBV2_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_FILTER_FRAME_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_AA_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_LR_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_QUOTA_PCT" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_EMA2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                    <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="120">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_GCC_FPS_MARGIN_BY_PID" param1="-100"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.GenshinImpact">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTBV2_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_MIN_FPS" param1="30"></data>
+                    <data cmd="PERF_RES_FPS_FBT_FILTER_FRAME_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_AA_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_LR_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_SEC_PCT_BY_PID" param1="5"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_SEC_PCT_BY_PID" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP_BY_PID" param1="10"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FRS_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_TZ_INDEX" param1="39"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="48000"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="5"></data>
+                    <data cmd="PERF_RES_FRS_THRESHOLD" param1="5"></data>
+                    <data cmd="PERF_RES_FRS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_GBE_CPU_0" param1="1500000"></data>
+                    <data cmd="PERF_RES_FPS_GBE_CPU_1" param1="2000000"></data>
+                    <data cmd="PERF_RES_FPS_GBE_POLICY_MASK" param1="384"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_TIMER2_MS" param1="3000"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_MAX_BOOST_CNT" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_TIMER1_MS" param1="500"></data>
+                    <data cmd="PERF_RES_FPS_FBT_MINITOP_THRS_HEAVY" param1="101"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_QUOTA_PCT" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_EMA2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_RECLAIM_POLICY" param1="1"></data>
+                </WINDOW>
+                <WINDOW mode="Single">
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="900000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="2"></data>
+                </WINDOW>
+                <WINDOW mode="Multi">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="92"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="88"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.enterprise.HK4E">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_SEC_PCT_BY_PID" param1="5"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_SEC_PCT_BY_PID" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP_BY_PID" param1="10"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ2CAP_M_BY_PID" param1="2200000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ2CAP_M_BY_PID" param1="2400000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ2CAP_BY_PID" param1="2000000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ2CAP_BY_PID" param1="2200000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="1800000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2850000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="3050000"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="47500"></data>
+                    <data cmd="PERF_RES_FRS_THRESHOLD" param1="3"></data>
+                    <data cmd="PERF_RES_FRS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_LIMIT_CFREQ_M" param1="2200000"></data>
+                    <data cmd="PERF_RES_FRS_LIMIT_RFREQ_M" param1="2200000"></data>
+                    <data cmd="PERF_RES_FRS_LIMIT_CFREQ" param1="2000000"></data>
+                    <data cmd="PERF_RES_FRS_LIMIT_RFREQ" param1="2200000"></data>
+                    <data cmd="PERF_RES_FPS_GBE1_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_MINITOP_THRS_HEAVY" param1="101"></data>
+                </WINDOW>
+                <WINDOW mode="Single">
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ_M" param1="2200000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ_M" param1="2400000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ" param1="2000000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ" param1="2200000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="900000"></data>
+                </WINDOW>
+                <WINDOW mode="Multi">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="92"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="88"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.yuanshencb">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTBV2_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_MIN_FPS" param1="30"></data>
+                    <data cmd="PERF_RES_FPS_FBT_FILTER_FRAME_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_AA_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_LR_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_SEC_PCT_BY_PID" param1="5"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_SEC_PCT_BY_PID" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP_BY_PID" param1="10"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FRS_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_TZ_INDEX" param1="39"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="48000"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="5"></data>
+                    <data cmd="PERF_RES_FRS_THRESHOLD" param1="5"></data>
+                    <data cmd="PERF_RES_FRS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_GBE_CPU_0" param1="1500000"></data>
+                    <data cmd="PERF_RES_FPS_GBE_CPU_1" param1="2000000"></data>
+                    <data cmd="PERF_RES_FPS_GBE_POLICY_MASK" param1="384"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_TIMER2_MS" param1="3000"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_MAX_BOOST_CNT" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_TIMER1_MS" param1="500"></data>
+                    <data cmd="PERF_RES_FPS_FBT_MINITOP_THRS_HEAVY" param1="101"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_QUOTA_PCT" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_EMA2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_RECLAIM_POLICY" param1="1"></data>
+                </WINDOW>
+                <WINDOW mode="Single">
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="900000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="2"></data>
+                </WINDOW>
+                <WINDOW mode="Multi">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="92"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="88"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.pubgmhd">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_STEP_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_SEC_PCT_BY_PID" param1="14"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_QR_FILTER_OUTLIER" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_GBE1_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTBV2_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_FILTER_FRAME_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_AA_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_LR_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="61"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="61"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_QUOTA_PCT" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_EMA2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                    <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="60">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="90">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="88"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="78"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="15"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="10"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.pubg.imobile">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_STEP_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_SEC_PCT_BY_PID" param1="14"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_QR_FILTER_OUTLIER" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_GBE1_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTBV2_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_FILTER_FRAME_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_AA_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_LR_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="61"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="61"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_QUOTA_PCT" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_EMA2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="60">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="90">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="88"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="78"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="15"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="10"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.ig">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_STEP_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_SEC_PCT_BY_PID" param1="14"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_QR_FILTER_OUTLIER" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_GBE1_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FSTBV2_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_FILTER_FRAME_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_AA_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_LR_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="61"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="61"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="79"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_SPID" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_STEP" param1="2"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_QUOTA_PCT" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_EMA2_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="60">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="90">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="88"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="78"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="15"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_FILTER_DEP_TASK_ENABLE_BY_PID" param1="1"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="10"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.vng.pubgmobile">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_STEP_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_SEC_PCT_BY_PID" param1="14"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_QR_FILTER_OUTLIER" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.rekoo.pubgm">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_STEP_BY_PID" param1="3"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_SEC_PCT_BY_PID" param1="14"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_QR_FILTER_OUTLIER" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="60">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="3"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="90">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="88"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="78"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="15"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="10"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.cod">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="90">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="90"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="85"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="10"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="120">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="15"></data>
+                    <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="47500"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="144">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="47500"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.activision.callofduty.shooter">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="90">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="90"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="85"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="10"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="120">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="15"></data>
+                    <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="47500"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="144">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="47500"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.garena.game.codm">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="90">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="90"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="85"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="10"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="120">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="15"></data>
+                    <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="47500"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="144">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="47500"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.speedmobile">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="144">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_FPS_MARGIN_BY_PID" param1="-50"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="88"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="83"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_STEP_BY_PID" param1="4"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.speedmobileEx">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+            <FPS value="144">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_FPS_MARGIN_BY_PID" param1="-50"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_B_BY_PID" param1="88"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPARATE_PCT_M_BY_PID" param1="83"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_UP_STEP_BY_PID" param1="4"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.android.camera">
+        <Activity name="com.android.camera.CameraActivity">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="2"></data>
+			    </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.antutu.ABenchMark">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_IO_BLOCK_SCHED" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.antutu.benchmark.full">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY_MODE" param1="2"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_IO_BLOCK_SCHED" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+        <Activity name="com.example.benchmark.full.SwordsmanActivity">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_GPU_FREQ_MAX" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+        <Activity name="com.example.benchmark.full.RefineryActivity">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_GPU_FREQ_MAX" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+        <Activity name="com.example.benchmark.full.UnityPlayerActivity">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_GPU_FREQ_MAX" param1="3"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="net.kishonti.gfxbench.v50000.corporate">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="1"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.futuremark.dmandroid.application">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="1"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.primatelabs.geekbench5.corporate">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.primatelabs.geekbench5">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.primatelabs.geekbench6">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.primatelabs.geekbench6.corporate">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.primatelabs.geekbench7">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.primatelabs.geekbench7.corporate">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.primatelabs.geekbench8">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.andromeda.androbench2">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_SCHED_CPUSET_TA" param1="240"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_IO_BLOCK_SCHED" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.ludashi.benchmark">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY_MODE" param1="2"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_IO_BLOCK_SCHED" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.ludashi.benchmark2">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_BW_MODE_HINT" param1="1"></data>
+                    <data cmd="PERF_RES_DRAM_CM_MGR_MAP_DRAM_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="15"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_0" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1" param1="40000"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2" param1="40000"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="7"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY" param1="1"></data>
+                    <data cmd="PERF_RES_THERMAL_SPORTS_CG_POLICY_MODE" param1="2"></data>
+                    <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="3"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                    <data cmd="PERF_RES_GPU_GED_FALLBACK_FREQUENCY_ADJUST" param1="0"></data>
+                    <data cmd="PERF_RES_IO_UFS_CLK_SCALE" param1="2"></data>
+                    <data cmd="PERF_RES_DRAM_DVFS_QOS_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                    <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.bbk.appstore">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_CORE_CTL_POLICY_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_2" param1="1"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2400000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="2600000"></data>
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.vivo.appstore">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2650000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="2600000"></data>
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.bbk.cloud">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2650000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="2600000"></data>
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.vivo.gallery">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2550000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="2400000"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.youku.phone">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                    <data cmd="PERF_RES_DISP_LPHRT_MODE" param1="66"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="tv.danmaku.bili">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_DISP_LPHRT_MODE" param1="66"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.qqlive">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_UTIL_EST_CONTROL" param1="0"></data>
+                    <data cmd="PERF_RES_DISP_LPHRT_MODE" param1="66"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.qiyi.video">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                    <data cmd="PERF_RES_DISP_LPHRT_MODE" param1="66"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.mm">
+        <Activity name="com.tencent.mm.plugin.finder.feed.ui.FinderProfileTimeLineUI">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+        <Activity name="com.tencent.mm.plugin.finder.ui.FinderHomeAffinityUI">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+        <Activity name="com.tencent.mm.plugin.scanner.ui.BaseScanUI">
+            <FPS value="Common">
+			    <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_CFP_ENABLE" param1="0"></data>
+                    <data cmd="PERF_RES_THERMAL_POLICY" param1="12"></data>
+				</WINDOW>
+            </FPS>
+        </Activity>
+        <Activity name="com.tencent.mm.ui.chatting.gallery.ImageGalleryUI">
+            <FPS value="60">
+			    <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="4"></data>
+                    <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_2" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+        <Activity name="com.tencent.mm.ui.LauncherUI">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_DISP_LPHRT_MODE" param1="60"></data>
+                    <data cmd="PERF_RES_VIDEO_HIGH_CPU_FREQ_MODE" param1="1"></data>
+			    </WINDOW>
+            </FPS>
+        </Activity>
+        <Activity name="com.tencent.mm.ui.chatting.ChattingUI">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_DISP_LPHRT_MODE" param1="60"></data>
+		    <data cmd="PERF_RES_VIDEO_HIGH_CPU_FREQ_MODE" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.mobileqq">
+        <Activity name="com.tencent.mobileqq.activity.SplashActivity">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_DISP_LPHRT_MODE" param1="60"></data>
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="8"></data>
+                    <data cmd="PERF_RES_SCHED_UTIL_EST_CONTROL" param1="0"></data>
+                    <data cmd="PERF_RES_VIDEO_HIGH_CPU_FREQ_MODE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_TARGET_MARGIN_C0" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_TARGET_MARGIN_C1" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_TARGET_MARGIN_C2" param1="0"></data>
+                    <data cmd="PERF_RES_SCHED_TARGET_FREQ_C0" param1="1000000"></data>
+                    <data cmd="PERF_RES_SCHED_TARGET_FREQ_C1" param1="1000000"></data>
+                    <data cmd="PERF_RES_SCHED_TARGET_FREQ_C2" param1="1000000"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.happyelements.AndroidAnimal">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.baidu.BaiduMap">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.autonavi.minimap">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.jkchess">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2600000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="2600000"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.ludo.king">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2600000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="2600000"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smile.gifmaker">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_UTIL_EST_CONTROL" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.kuaishou.nebula">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_UTIL_EST_CONTROL" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.ss.android.ugc.aweme">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_UTIL_EST_CONTROL" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.ss.android.ugc.live">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_UTIL_EST_CONTROL" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.qqmusic">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.dragon.read">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_PELT_HALFLIFE_HIGH_PRIORITY" param1="32"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.happyelements.AndroidAnimal.qq">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_GCC_DOWN_QUOTA_PCT_BY_PID" param1="20"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.dwrg">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_2" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_CM_BIG_CAP" param1="20"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_CM_TDIFF" param1="-3000000"></data>
+                    <data cmd="PERF_RES_FPS_FBT_ULTRA_RESCUE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="100"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="100"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.pwrd.hotta.laohu">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_M_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_UCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_LIMIT_RUCLAMP_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.supercell.brawlstars">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="75"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="100"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_P_BY_PID" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.netease.hyxd">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_N_BY_PID" param1="50"></data>
+                    <data cmd="PERF_RES_FPS_FBT_QR_T2WNT_Y_P_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BOOST_AFFINITY_BY_PID" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_IDLEPREFER" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="org.chromium.latency.walt">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="20"></data>
+                    <data cmd="PERF_RES_SCHED_SYSTEM_MASK" param1="0x70"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="org.kamrik.latency.walt">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="20"></data>
+                    <data cmd="PERF_RES_SCHED_SYSTEM_MASK" param1="0x70"></data>
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.mm">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_GPU_FW_IDLE" param1="1"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+        <Activity name="com.tencent.mm.plugin.voip.ui.VideoActivity">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_BYPASS_NONSF" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FPSGO_CONTROL_API_MASK" param1="6"></data>
+                    <data cmd="PERF_RES_FPS_FBT_SEPERATECAP_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F_OPP" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_RESCUE_C" param1="0"></data>
+                    <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="10"></data>
+                    <data cmd="PERF_RES_FPS_FBT_GCC_POSITIVE_CLAMP" param1="1"></data>
+                </WINDOW>
+                <WINDOW mode="Single">
+                    <data cmd="PERF_RES_CFP_ENABLE" param1="0"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.lunarlabs.panda">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="1400000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="1000000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="1700000"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.djsy">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_FPS_FBT_CEILING_ENABLE" param1="1"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2600000"></data>
+                    <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="2600000"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.sie.mp">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_GPU_GED_TIMER_BASE_DVFS_MARGIN" param1="40"></data>
+                <data cmd="PERF_RES_GPU_GED_LOADING_BASE_DVFS_STEP" param1="8"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="47"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.android.systemui">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_GPU_GED_TIMER_BASE_DVFS_MARGIN" param1="40"></data>
+                <data cmd="PERF_RES_GPU_GED_LOADING_BASE_DVFS_STEP" param1="8"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="47"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.qqlive">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_GPU_GED_TIMER_BASE_DVFS_MARGIN" param1="40"></data>
+                <data cmd="PERF_RES_GPU_GED_LOADING_BASE_DVFS_STEP" param1="8"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="47"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.drawelements.deqp">
+        <Activity name="Common">
+            <FPS value="Common">
+                <WINDOW mode="Common">
+                    <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                    <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                </WINDOW>
+            </FPS>
+        </Activity>
+    </Package>
+</WHITELIST>

@@ -1,0 +1,29 @@
+on zygote-start && property:ro.vendor.mtk.app32_boost_preload=1
+    write /proc/bootprof "HBT:zygote_hbt-start"
+    start zygote_hbt
+
+# HBT zygote
+service zygote_hbt /system/bin/hbt_translator /system/bin/app_process32 -Xzygote /system/bin --zygote --socket-name=zygote_tertiary
+    class main
+    priority -20
+    user root
+    group root readproc reserved_disk
+    socket zygote_tertiary stream 660 root system
+    socket usap_pool_tertiary stream 660 root system
+    onrestart restart zygote
+    task_profiles ProcessCapacityHigh MaxPerformance
+    disabled
+
+on property:init.svc.zygote=restarting && property:ro.vendor.mtk.app32_boost_preload=1
+    stop zygote_hbt
+    start zygote_hbt
+
+on property:init.svc.zygote=restarting && property:ro.vendor.mtk.app32_boost_preload=0 && property:persist.device_config.vendor_system_native.zygote_hbt=1
+    stop zygote_hbt
+    start zygote_hbt
+
+on property:sys.boot_completed=1 && property:persist.device_config.vendor_system_native.zygote_hbt=0
+    stop zygote_hbt
+
+on property:sys.boot_completed=1 && property:persist.device_config.vendor_system_native.zygote_hbt=1
+    start zygote_hbt

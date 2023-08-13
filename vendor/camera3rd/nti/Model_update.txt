@@ -1,0 +1,18 @@
+time:2022/10/20
+model_update:
+
+    model_name: fbp.bin (FrontBokehPreview)
+    project_name: tf_refinenet_mobilenet_035_v2_hdr_t3_distill_quant
+    platform: cttm
+
+    model_name: fes.bin (FaceEnhanceSegment)
+    project_name: ref_mn_140_640_qt_cascadepsp_block5_t5
+    platform: neuron
+
+    model_name: psh.bin (PersonSkinHairSegment)
+    project_name: psh_rvgg_a2_ref_640_fa_q
+    platform: neuron
+    
+    model_name: pm.bin (PersonMatting)
+    project_name: mask_guide_two_stage_mat
+    platform: neuron

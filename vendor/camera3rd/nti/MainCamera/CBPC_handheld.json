@@ -1,0 +1,44 @@
+{
+	"ISOGainKnee":	{
+    "isoKneeNum": 9,
+    "isoKnee": [50, 200, 800, 1600, 3200, 6400, 12800, 51200, 102400]
+	},
+	"NoiseProfile":	{
+		"a0":	0.0000993365,
+		"a1":	0.0000643851,
+		"b0":	0.0000000054,
+		"b1":	0.0000910578
+	},
+  "BPCparam": {
+    "comment_bpcEnable": "control the bad pixel correction: 1-on,0-off",
+    "bpcEnable": 1,
+    
+    "comment_bpdMode": "control the bad pixel detection mode: 0-Based on Green data detection, 1-Based on Bayer data detection",
+    "bpcMode": [ 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    
+    "comment_singletHotFactor": "control the detection of singlets of hot pixels in the sky and land respectively, first line parameters represent land, second line parameters represent sky ",
+    "singletHotFactor": [ 22, 22, 22, 22, 22, 22, 22, 0.2,0.2,
+                          24, 24, 24, 24, 24, 24, 24, 24, 24],
+    
+    "comment_coupletHotFactor": "control the detection of couplets of hot pixels in the sky and land respectively, first line parameters represent land, second line parameters represent sky ",
+    "coupletHotFactor": [ 22, 22, 22, 22, 22, 22, 22, 0.2, 0.2,
+                          24, 24, 24, 24, 24, 24, 24, 24, 24],
+   
+    "comment_tripletHotFactor": "control the detection of triplets of hot pixels in the sky and land respectively, first line parameters represent land, second line parameters represent sky ",
+    "tripletHotFactor": [ 22, 22, 22, 22, 22, 22, 22, 0.2, 0.2,
+                          24, 24, 24, 24, 24, 24, 24, 24, 24],
+    
+    "comment_singletColdFactor": "control the detection of singlets of cold pixels in the sky and land respectively, first line parameters represent land, second line parameters represent sky ",
+    "singletColdFactor": [ 22, 22, 22, 22, 22, 22, 22, 22, 22,
+                            24, 24, 24, 24, 24, 24, 24, 24, 24],
+    
+    "comment_coupletColdFactor": "control the detection of couplets of cold pixels in the sky and land respectively, first line parameters represent land, second line parameters represent sky ",
+    "coupletColdFactor": [ 22, 22, 22, 22, 22, 22, 22, 22, 22,
+                            24, 24, 24, 24, 24, 24, 24, 24, 24],
+    
+    "comment_tripletColdFactor": "control the detection of triplets of cold pixels in the sky and land respectively, first line parameters represent land, second line parameters represent sky ",
+    "tripletColdFactor": [ 22, 22, 22, 22, 22, 22, 22, 22, 22,
+                            24, 24, 24, 24, 24, 24, 24, 24, 24]
+  }
+
+}

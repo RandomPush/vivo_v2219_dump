@@ -1,0 +1,48 @@
+{
+    "segment_configs": {
+        "dumpPath": "data/vendor/camera/test/aisegment/result/",
+        "platform": 1
+    },
+    "network_configs": [
+        {
+            "type": 1,
+            "typename": "SEG_HUMAN_MINI_1",
+            "modelPath": "vendor/camera3rd/nti/fbp.bin",
+            "networkRuntime": "cttm",
+            "deviceType": 0,
+            "threadNum": 1,
+            "powerFactor": 1.5,
+            "postPluginType": "ArgmaxTransmitP"
+        },
+        {
+            "type": 5,
+            "typename": "SEG_HUMAN_NORMAL_3",
+            "modelPath": "vendor/camera3rd/nti/fes.bin",
+            "networkRuntime": "neuron",
+            "deviceType": 3,
+            "postPluginType": "DoubleResizeArgmax",
+            "postResizedWidth": 656,
+            "postResizedHeight": 656,
+            "postAlignCorners": 0,
+            "postHalfPixelCenters": 0
+        },
+        {
+            "type": 11,
+            "typename": "SEG_PERSON_SKIN_HAIR",
+            "modelPath": "vendor/camera3rd/nti/psh.bin",
+            "networkRuntime": "neuron",
+            "deviceType": 3,
+            "frontPluginType": "ResizeDet",
+            "postPluginType": "MultiOutDet"
+        },
+        {
+            "type": 12,
+            "typename": "SEG_PERSON_MATTING_2",
+            "modelPath": "vendor/camera3rd/nti/pm.bin",
+            "networkRuntime": "neuron",
+            "deviceType": 3,
+            "frontPluginType": "ResizeCropMat",
+            "postPluginType": "SingleOutMat"
+        }
+    ]
+}

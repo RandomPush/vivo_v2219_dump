@@ -1,0 +1,7 @@
+on boot
+    write /dev/kmsg "insmod normal connfem.ko"
+    insmod /vendor/lib/modules/connfem.ko
+
+on boot && property:vendor.gki_ko=1
+    write /dev/kmsg "insmod 5.15-gki connfem.ko"
+    insmod /vendor/lib/modules/5.15-gki/connfem.ko

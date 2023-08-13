@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Calib_Data>
+  <module name="version">
+    <version>22102001</version>
+  </module>
+  <module name="sr">
+    <gain>128</gain>
+  </module> 
+  <module name="nr">
+    <display name="display">
+		<low>24,10,10,10,10,10,10,10,10,10</low>
+		<mid>24,10,10,10,10,10,10,10,10,10</mid>
+		<high>24,10,10,10,10,10,10,10,10,10</high>
+	</display>
+  </module> 
+  <module name="sdr2hdr">
+    <cce name="cce">
+        <low_gain>48</low_gain>
+        <mid_gain>56</mid_gain>
+        <high_gain>64</high_gain>
+    </cce>
+    <color name="main0">
+	  <brightness>128</brightness>
+	  <saturation>512</saturation>
+	  <contrast>512</contrast>
+	  <skin_hh>128</skin_hh>
+	  <skin_hs>512</skin_hs>
+    </color>
+    <color name="main1">
+	  <brightness>128</brightness>
+	  <saturation>576</saturation>
+	  <contrast>512</contrast>
+	  <skin_hh>128</skin_hh>
+	  <skin_hs>512</skin_hs>
+    </color>
+    <color name="main2">
+	  <brightness>128</brightness>
+	  <saturation>512</saturation>
+	  <contrast>512</contrast>
+	  <skin_hh>128</skin_hh>
+	  <skin_hs>512</skin_hs>
+    </color>
+    <color name="main3">
+	  <brightness>128</brightness>
+	  <saturation>576</saturation>
+	  <contrast>512</contrast>
+	  <skin_hh>128</skin_hh>
+	  <skin_hs>512</skin_hs>
+    </color>
+    <color_ISP name="main0">
+	  <brightness>128</brightness>
+	  <saturation>512</saturation>
+	  <contrast>512</contrast>
+	  <skin_hh>128</skin_hh>
+	  <skin_hs>512</skin_hs>
+    </color_ISP>
+    <color_ISP name="main1">
+	  <brightness>128</brightness>
+	  <saturation>512</saturation>
+	  <contrast>512</contrast>
+	  <skin_hh>128</skin_hh>
+	  <skin_hs>512</skin_hs>
+    </color_ISP>
+    <color_ISP name="main2">
+	  <brightness>128</brightness>
+	  <saturation>512</saturation>
+	  <contrast>512</contrast>
+	  <skin_hh>128</skin_hh>
+	  <skin_hs>512</skin_hs>
+    </color_ISP>
+    <color_ISP name="main3">
+	  <brightness>128</brightness>
+	  <saturation>512</saturation>
+	  <contrast>512</contrast>
+	  <skin_hh>128</skin_hh>
+	  <skin_hs>512</skin_hs>
+    </color_ISP>
+    <sdr2hdr name="sdr2hdr">
+	  <gain>128</gain>
+	  <ble_gain>32</ble_gain>
+    </sdr2hdr>
+    <curve name="00">
+	<dark>0,16,30,45,62,79,96,115,134,151,166,183,198,209,221,233,243,255</dark>
+	<normal>0,14,27,37,50,65,82,104,124,141,158,174,189,201,215,230,243,255</normal>
+	<light>0,13,25,31,40,54,68,86,102,120,136,153,171,191,209,226,241,255</light>
+	<ex_dark>0,12,30,45,62,79,96,115,134,151,166,183,198,209,221,233,243,255</ex_dark>
+	<ex_normal>0,11,27,37,50,65,82,104,124,141,158,174,189,201,215,230,243,255</ex_normal>
+	<ex_light>0,10,25,31,40,54,68,86,102,120,136,153,171,191,209,226,241,255</ex_light>
+    </curve>
+    <curve name="01">
+	<dark>0,17,36,54,73,93,112,130,147,161,174,187,200,212,222,230,241,255</dark>
+	<normal>0,15,30,43,57,73,90,108,125,141,157,173,188,201,214,226,240,255</normal>
+	<light>0,14,24,32,43,57,71,86,102,119,136,155,171,188,203,220,237,255</light>
+	<ex_dark>4,13,30,45,62,79,96,115,134,151,166,183,198,209,221,233,243,255</ex_dark>
+	<ex_normal>4,12,27,37,50,65,82,104,124,141,158,174,189,201,215,230,243,255</ex_normal>
+	<ex_light>4,11,25,31,40,54,68,86,102,120,136,153,171,191,209,226,241,255</ex_light>
+    </curve>
+    <curve name="02">
+	<dark>0,28,51,67,81,90,97,108,120,135,149,165,180,195,210,225,240,255</dark>
+	<normal>0,19,40,57,71,82,92,107,120,135,150,165,180,195,210,225,240,255</normal>
+	<light>0,15,30,45,60,75,90,105,120,135,150,165,180,195,210,225,240,255</light>
+	<ex_dark>8,13,30,45,62,79,96,115,134,151,166,183,198,209,221,233,243,255</ex_dark>
+	<ex_normal>8,12,27,37,50,65,82,104,124,141,158,174,189,201,215,230,243,255</ex_normal>
+	<ex_light>8,11,25,31,40,54,68,86,102,120,136,153,171,191,209,226,241,255</ex_light>
+    </curve>
+    <curve name="03">
+	<dark>0,15,30,45,60,75,90,105,120,135,150,165,180,195,210,225,240,255</dark>
+	<normal>0,15,30,45,60,75,90,105,120,135,147,156,166,179,193,209,227,255</normal>
+	<light>0,15,30,45,60,75,90,105,120,135,141,148,155,166,180,195,214,255</light>
+	<ex_dark>8,13,30,45,62,79,96,115,134,151,166,183,198,209,221,233,243,255</ex_dark>
+	<ex_normal>8,12,27,37,50,65,82,104,124,141,158,174,189,201,215,230,243,255</ex_normal>
+	<ex_light>8,11,25,31,40,54,68,86,102,120,136,153,171,191,209,226,241,255</ex_light>
+    </curve>
+    <curve_ISP name="00"><!--Wide Qua Camera ISP supernight -->
+	<dark>0,20,35,50,65,80,97,113,128,143,157,170,184,196,211,225,240,255</dark>
+	<normal>0,20,35,50,65,80,97,113,128,143,157,170,184,196,211,225,240,255</normal>
+	<light>0,20,35,50,65,80,97,113,128,143,157,170,184,196,211,225,240,255</light>
+	<ex_dark>0,20,35,50,65,80,97,113,128,143,157,170,184,196,211,225,240,255</ex_dark>
+	<ex_normal>30,52,94,116,142,154,167,180,192,206,220,224,231,236,240,245,250,255</ex_normal>
+	<ex_light>40,55,83,109,123,136,148,160,172,185,197,201,221,227,234,250,252,255</ex_light>
+    </curve_ISP>
+    <curve_ISP name="01"><!--Wide main Camera ISP supernight-->
+	<dark>0,14,28,41,54,68,85,102,120,135,150,165,180,195,210,225,240,255</dark>
+	<normal>0,13,24,36,50,72,89,102,119,142,157,172,184,198,212,226,241,255</normal>
+	<light>0,25,44,65,86,99,116,136,151,164,172,180,188,198,212,226,241,255</light>
+	<ex_dark>0,14,32,47,62,77,92,107,121,135,150,165,180,195,210,225,240,255</ex_dark>
+	<ex_normal>30,52,94,116,142,154,167,180,192,206,220,224,231,236,240,245,250,255</ex_normal>
+	<ex_light>40,55,83,109,123,136,148,160,172,185,197,201,221,227,234,250,252,255</ex_light>
+    </curve_ISP>
+    <curve_ISP name="02">
+	<dark>1,23,47,74,100,125,148,169,189,207,222,235,244,247,249,251,253,255</dark>
+	<normal>1,21,45,72,96,118,146,168,187,204,217,228,236,240,244,247,251,255</normal>
+	<light>4,11,38,64,89,111,132,151,168,184,198,211,222,231,238,243,248,255</light>
+	<ex_dark>1,16,37,59,77,94,112,129,147,159,174,187,198,208,220,235,243,255</ex_dark>
+	<ex_normal>1,10,28,50,72,93,116,134,152,166,180,193,204,215,226,236,245,255</ex_normal>
+	<ex_light>1,7,18,40,63,83,105,127,145,154,170,181,189,198,213,229,243,255</ex_light>
+    </curve_ISP>
+    <curve_ISP name="03">
+	<dark>1,23,47,74,100,125,148,169,189,207,222,235,244,247,249,251,253,255</dark>
+	<normal>1,21,45,72,96,118,146,168,187,204,217,228,236,240,244,247,251,255</normal>
+	<light>4,11,38,64,89,111,132,151,168,184,198,211,222,231,238,243,248,255</light>
+	<ex_dark>1,16,37,59,77,94,112,129,147,159,174,187,198,208,220,235,243,255</ex_dark>
+	<ex_normal>1,10,28,50,72,93,116,134,152,166,180,193,204,215,226,236,245,255</ex_normal>
+	<ex_light>1,7,18,40,63,83,105,127,145,154,170,181,189,198,213,229,243,255</ex_light>
+    </curve_ISP>
+  </module> 
+</Calib_Data>

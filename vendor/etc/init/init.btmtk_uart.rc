@@ -1,0 +1,27 @@
+# load btmtksdio
+#on boot
+#  insmod /vendor/lib/modules/btmtk_uart_unify.ko
+#  start uart_launcher
+
+# vivo liuyang modify for gki [B220927-1133] begin
+on property:vendor.connsys.driver.ready=yes && property:ro.vendor.bt.connac3=yes
+  write /dev/kmsg "insmod normal btmtk_uart_unify.ko"
+  insmod /vendor/lib/modules/btmtk_uart_unify.ko
+  write /dev/kmsg "insmod 5.15-gki btmtk_uart_unify.ko"
+  insmod /vendor/lib/modules/5.15-gki/btmtk_uart_unify.ko
+# vivo liuyang modify for gki [B220927-1133] begin
+  chown bluetooth bluetooth /dev/ttyS3
+  start uart_launcher
+  chown bluetooth bluetooth /proc/stpbt
+  chown bluetooth bluetooth /proc/stpbt/bt_fw_version
+
+on property:ro.vendor.bt.connac3=no
+  stop uart_launcher
+
+on property:vendor.connsys.driver.ready=no
+  stop uart_launcher
+
+# service for uart_launcher
+service uart_launcher /vendor/bin/uart_launcher -f 1 -p /dev/ttyS3
+  user bluetooth
+  group system

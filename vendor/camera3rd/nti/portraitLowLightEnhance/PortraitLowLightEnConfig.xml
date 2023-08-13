@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PortraitLowLightEnhanceConfig version="0.0.1">
+    <!-- 手机平台 PD 0.7250 1.8250 2.8350 100.980 101.981 200.tj1000 300.win 400.linux-->
+	<PortraitLowLightEnhanceXmlVersion>1.0.12</PortraitLowLightEnhanceXmlVersion>
+    <Platform>200</Platform>
+    <NoProcess>0</NoProcess>
+    <LightParam>
+        <ModelSwitchLightValue>40</ModelSwitchLightValue>
+		<ModelSwitchLightValue2>55</ModelSwitchLightValue2>
+		<ModelSwitchLightBKValue>30</ModelSwitchLightBKValue>
+		<ModelOffLightValue>10</ModelOffLightValue>
+		<ModelOffLightBKValue>10</ModelOffLightBKValue>
+		<EnableHightLightFusion>10</EnableHightLightFusion>
+		<EnableYSmooth>10</EnableYSmooth>
+    </LightParam>
+    <ModelPath>
+        <PortraitLowLightEnhanceHighISOModel use='1' range="0" resi="0" engine="10" device="4" inw="1024" inh="1024" space2depth="1" frame="0" powermode="0" output_name="generator_unet_pyramid_add_6_0" input_name="input_0">portraitlowlightenhance_high.bin</PortraitLowLightEnhanceHighISOModel>
+		<PortraitLowLightEnhancelowISOModel use='1' range="0" resi="0" engine="10" device="4" inw="1024" inh="1024" space2depth="1" frame="0"  powermode="0" output_name="generator_unet_pyramid_add_6_0" input_name="input_0">portraitlowlightenhance_low.bin</PortraitLowLightEnhancelowISOModel>
+    </ModelPath>
+</PortraitLowLightEnhanceConfig>

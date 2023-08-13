@@ -1,0 +1,7 @@
+on boot
+    write /dev/kmsg "insmod normal conninfra.ko"
+    insmod /vendor/lib/modules/conninfra.ko
+
+on boot && property:vendor.gki_ko=1
+    write /dev/kmsg "insmod 5.15-gki conninfra.ko"
+    insmod /vendor/lib/modules/5.15-gki/conninfra.ko

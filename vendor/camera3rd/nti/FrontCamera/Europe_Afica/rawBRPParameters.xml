@@ -1,0 +1,2154 @@
+﻿<?xml version="1.0"?>
+<RAWHDR_ALG_Parameters>
+  <COMMON>
+    <xmlVersion description="xml Version ">3.0.200</xmlVersion>
+    <DUMP>
+      <DumpMergeInput description="dump control for hdr input raw, convert to jpg">0</DumpMergeInput>
+    </DUMP>
+    <DEBUG>
+      <AdjustEv0 description="improve the brightness of ev0, range is -2 to 2">0</AdjustEv0>
+      <EnablePure2Proc description="0 - disable, 1 - enable">0</EnablePure2Proc>
+      <EnableLumaShade description="0 - disable, 1 - enable">0</EnableLumaShade>
+      <EnableLumaWhite description="0 - disable, 1 - enable">1</EnableLumaWhite>
+      <DeleteFrameParam_EnableClipShade description="0 - disable, 1 - enable">0</DeleteFrameParam_EnableClipShade>
+    </DEBUG>
+  </COMMON>
+  <AIHDR>
+    <AIHDRDumpEnable>0</AIHDRDumpEnable>
+    <AIHDRDumpCCMEnable>0</AIHDRDumpCCMEnable>
+    <AIHDRReadInverseEnable>1</AIHDRReadInverseEnable>
+    <AIHDRsafeDeltaEVDecreasedForHdrPortraitThresh>-1000</AIHDRsafeDeltaEVDecreasedForHdrPortraitThresh>
+    <AIHDRDumpImageWidth>4080</AIHDRDumpImageWidth>
+    <AIHDRDumpImageHeight>3060</AIHDRDumpImageHeight>
+  </AIHDR>
+  <Exposrue_Strategy>
+    <fHdrExpOverExpRatioTH>0.001</fHdrExpOverExpRatioTH>
+    <fHdrExpUnderExpRatioTH>0.005</fHdrExpUnderExpRatioTH>
+    <fLowLightTH>500</fLowLightTH>
+  </Exposrue_Strategy>
+  <Sunset_Strategy>
+    <EVLastGain description="enable range is 16 to 1, 0 - disable, suggest 3.0">0.0</EVLastGain>
+    <HoughCircleUPThreshold description="range is 1.0 to HoughCircleDOWNThreshold, suggest 0.03">0.03</HoughCircleUPThreshold>
+    <HoughCircleDOWNThreshold description="range is HoughCircleUPThreshold to 0, suggest 0.00012">0.00012</HoughCircleDOWNThreshold>
+    <EVLastGainUPThreshold description="range is 1.0 to EVLastGainDOWNThreshold, suggest 0.0024">0.0024</EVLastGainUPThreshold>
+    <EVLastGainDOWNThreshold description="range is EVLastGainUPThreshold to 0, suggest 0.00024">0.00024</EVLastGainDOWNThreshold>
+    <SunHoughCircleMin description="range is 127 to 6, suggest 9">9</SunHoughCircleMin>
+    <MoonHoughCircleMin description="range is 127 to 6, suggest 9">9</MoonHoughCircleMin>
+  </Sunset_Strategy>
+  <CAIXIA_saturation_Enhance>
+    <Enable description="0 is disadble">1</Enable>
+    <saturationValue description="saturation enhance strength,range 0 to 0.2, suggest 0.1, 0 is no enhance , 0.2 is most enhanced">0.1</saturationValue>
+  </CAIXIA_saturation_Enhance>
+  <HighlightClip>
+    <Enable>1</Enable>
+    <ClipThresh description="ClipThresh range is 0-1.0, control the clip value.">0.25</ClipThresh>
+  </HighlightClip>
+  <Deglare>
+    <Enable>1</Enable>
+    <fDeglareRatio>0.5</fDeglareRatio>
+    <fDeflareRatio>0.5</fDeflareRatio>
+  </Deglare>
+  <CyanCorrect>
+    <Enable>1</Enable>
+    <fBrightTh description="brightTh range is 0.1-0.9, only correct pixel bright than threshold">0.7</fBrightTh>
+    <i32CyanCorrectStrength description="the range is 0 - 32000, control the correct strength.">22000</i32CyanCorrectStrength>
+  </CyanCorrect>
+  <ChromaticAberrationCorrection>
+    <Enable>0</Enable>
+  </ChromaticAberrationCorrection>
+  <Preprocess>
+    <gammaApplyEnable>1</gammaApplyEnable>
+    <s32OverExposureMotionAreaClipThre>300</s32OverExposureMotionAreaClipThre>
+    <i32defalutGammaTab description="the gamma table is copy from the most bright part gamma lut in ipe gamma">
+      <tableNum>4</tableNum>
+      <lux_start>0 240 380 510</lux_start>
+      <lux_end>190 360 480 1000</lux_end>
+      <gammalen>257</gammalen>
+      <table0>0 14 28 42 55 69 83 97 111 124 138 151 164 177 190 203 215 227 239 251 263 274 285 296 306 316 326 335 345 354 363 371 380 388 396 403 411 418 425 432 439 446 452 458 465 471 477 483 488 494 500 505 510 516 521 526 532 537 542 547 552 557 562 567 572 577 582 586 591 596 600 605 609 614 618 623 627 631 636 640 644 648 652 656 660 663 667 671 674 678 681 685 688 691 695 698 701 704 707 710 713 716 719 722 725 728 730 733 736 738 741 743 746 749 751 753 756 758 761 763 765 768 770 772 775 777 779 781 784 786 788 790 792 795 797 799 801 803 805 807 810 812 814 816 818 820 822 824 826 828 830 833 835 837 839 841 843 845 847 849 851 853 855 857 859 860 862 864 866 868 870 872 874 876 878 880 882 883 885 887 889 891 893 895 897 898 900 902 904 906 908 909 911 913 915 917 918 920 922 924 925 927 929 931 933 934 936 938 940 941 943 945 947 948 950 952 954 955 957 959 960 962 964 966 967 969 971 972 974 976 977 979 981 983 984 986 988 989 991 993 994 996 998 999 1001 1003 1004 1006 1008 1009 1011 1013 1015 1016 1018 1020</table0>
+      <table1>0 14 28 42 55 69 83 97 111 124 138 151 164 177 190 203 215 227 239 251 263 274 285 296 306 316 326 335 345 354 363 371 380 388 396 403 411 418 425 432 439 446 452 458 465 471 477 483 488 494 500 505 510 516 521 526 532 537 542 547 552 557 562 567 572 577 582 586 591 596 600 605 609 614 618 623 627 631 636 640 644 648 652 656 660 663 667 671 674 678 681 685 688 691 695 698 701 704 707 710 713 716 719 722 725 728 730 733 736 738 741 743 746 749 751 753 756 758 761 763 765 768 770 772 775 777 779 781 784 786 788 790 792 795 797 799 801 803 805 807 810 812 814 816 818 820 822 824 826 828 830 833 835 837 839 841 843 845 847 849 851 853 855 857 859 860 862 864 866 868 870 872 874 876 878 880 882 883 885 887 889 891 893 895 897 898 900 902 904 906 908 909 911 913 915 917 918 920 922 924 925 927 929 931 933 934 936 938 940 941 943 945 947 948 950 952 954 955 957 959 960 962 964 966 967 969 971 972 974 976 977 979 981 983 984 986 988 989 991 993 994 996 998 999 1001 1003 1004 1006 1008 1009 1011 1013 1015 1016 1018 1020</table1>
+      <table2>0 14 28 42 55 69 83 97 111 124 138 151 164 177 190 203 215 227 239 251 263 274 285 296 306 316 326 335 345 354 363 371 380 388 396 403 411 418 425 432 439 446 452 458 465 471 477 483 488 494 500 505 510 516 521 526 532 537 542 547 552 557 562 567 572 577 582 586 591 596 600 605 609 614 618 623 627 631 636 640 644 648 652 656 660 663 667 671 674 678 681 685 688 691 695 698 701 704 707 710 713 716 719 722 725 728 730 733 736 738 741 743 746 749 751 753 756 758 761 763 765 768 770 772 775 777 779 781 784 786 788 790 792 795 797 799 801 803 805 807 810 812 814 816 818 820 822 824 826 828 830 833 835 837 839 841 843 845 847 849 851 853 855 857 859 860 862 864 866 868 870 872 874 876 878 880 882 883 885 887 889 891 893 895 897 898 900 902 904 906 908 909 911 913 915 917 918 920 922 924 925 927 929 931 933 934 936 938 940 941 943 945 947 948 950 952 954 955 957 959 960 962 964 966 967 969 971 972 974 976 977 979 981 983 984 986 988 989 991 993 994 996 998 999 1001 1003 1004 1006 1008 1009 1011 1013 1015 1016 1018 1020</table2>
+      <table3>0 14 28 42 55 69 83 97 111 124 138 151 164 177 190 203 215 227 239 251 263 274 285 296 306 316 326 335 345 354 363 371 380 388 396 403 411 418 425 432 439 446 452 458 465 471 477 483 488 494 500 505 510 516 521 526 532 537 542 547 552 557 562 567 572 577 582 586 591 596 600 605 609 614 618 623 627 631 636 640 644 648 652 656 660 663 667 671 674 678 681 685 688 691 695 698 701 704 707 710 713 716 719 722 725 728 730 733 736 738 741 743 746 749 751 753 756 758 761 763 765 768 770 772 775 777 779 781 784 786 788 790 792 795 797 799 801 803 805 807 810 812 814 816 818 820 822 824 826 828 830 833 835 837 839 841 843 845 847 849 851 853 855 857 859 860 862 864 866 868 870 872 874 876 878 880 882 883 885 887 889 891 893 895 897 898 900 902 904 906 908 909 911 913 915 917 918 920 922 924 925 927 929 931 933 934 936 938 940 941 943 945 947 948 950 952 954 955 957 959 960 962 964 966 967 969 971 972 974 976 977 979 981 983 984 986 988 989 991 993 994 996 998 999 1001 1003 1004 1006 1008 1009 1011 1013 1015 1016 1018 1020</table3>
+    </i32defalutGammaTab>
+    <i32defalutPortraitGammaTab description="the Portrait gamma table is copy from the most bright part gamma lut in ipe gamma">
+      <tableNum>4</tableNum>
+      <lux_start>0 240 380 510</lux_start>
+      <lux_end>190 360 480 1000</lux_end>
+      <gammalen>257</gammalen>
+      <table0>0 14 28 42 55 69 83 97 111 124 138 151 164 177 190 203 215 227 239 251 263 274 285 296 306 316 326 335 345 354 363 371 380 388 396 403 411 418 425 432 439 446 452 458 465 471 477 483 488 494 500 505 510 516 521 526 532 537 542 547 552 557 562 567 572 577 582 586 591 596 600 605 609 614 618 623 627 631 636 640 644 648 652 656 660 663 667 671 674 678 681 685 688 691 695 698 701 704 707 710 713 716 719 722 725 728 730 733 736 738 741 743 746 749 751 753 756 758 761 763 765 768 770 772 775 777 779 781 784 786 788 790 792 795 797 799 801 803 805 807 810 812 814 816 818 820 822 824 826 828 830 833 835 837 839 841 843 845 847 849 851 853 855 857 859 860 862 864 866 868 870 872 874 876 878 880 882 883 885 887 889 891 893 895 897 898 900 902 904 906 908 909 911 913 915 917 918 920 922 924 925 927 929 931 933 934 936 938 940 941 943 945 947 948 950 952 954 955 957 959 960 962 964 966 967 969 971 972 974 976 977 979 981 983 984 986 988 989 991 993 994 996 998 999 1001 1003 1004 1006 1008 1009 1011 1013 1015 1016 1018 1020</table0>
+      <table1>0 14 28 42 55 69 83 97 111 124 138 151 164 177 190 203 215 227 239 251 263 274 285 296 306 316 326 335 345 354 363 371 380 388 396 403 411 418 425 432 439 446 452 458 465 471 477 483 488 494 500 505 510 516 521 526 532 537 542 547 552 557 562 567 572 577 582 586 591 596 600 605 609 614 618 623 627 631 636 640 644 648 652 656 660 663 667 671 674 678 681 685 688 691 695 698 701 704 707 710 713 716 719 722 725 728 730 733 736 738 741 743 746 749 751 753 756 758 761 763 765 768 770 772 775 777 779 781 784 786 788 790 792 795 797 799 801 803 805 807 810 812 814 816 818 820 822 824 826 828 830 833 835 837 839 841 843 845 847 849 851 853 855 857 859 860 862 864 866 868 870 872 874 876 878 880 882 883 885 887 889 891 893 895 897 898 900 902 904 906 908 909 911 913 915 917 918 920 922 924 925 927 929 931 933 934 936 938 940 941 943 945 947 948 950 952 954 955 957 959 960 962 964 966 967 969 971 972 974 976 977 979 981 983 984 986 988 989 991 993 994 996 998 999 1001 1003 1004 1006 1008 1009 1011 1013 1015 1016 1018 1020</table1>
+      <table2>0 14 28 42 55 69 83 97 111 124 138 151 164 177 190 203 215 227 239 251 263 274 285 296 306 316 326 335 345 354 363 371 380 388 396 403 411 418 425 432 439 446 452 458 465 471 477 483 488 494 500 505 510 516 521 526 532 537 542 547 552 557 562 567 572 577 582 586 591 596 600 605 609 614 618 623 627 631 636 640 644 648 652 656 660 663 667 671 674 678 681 685 688 691 695 698 701 704 707 710 713 716 719 722 725 728 730 733 736 738 741 743 746 749 751 753 756 758 761 763 765 768 770 772 775 777 779 781 784 786 788 790 792 795 797 799 801 803 805 807 810 812 814 816 818 820 822 824 826 828 830 833 835 837 839 841 843 845 847 849 851 853 855 857 859 860 862 864 866 868 870 872 874 876 878 880 882 883 885 887 889 891 893 895 897 898 900 902 904 906 908 909 911 913 915 917 918 920 922 924 925 927 929 931 933 934 936 938 940 941 943 945 947 948 950 952 954 955 957 959 960 962 964 966 967 969 971 972 974 976 977 979 981 983 984 986 988 989 991 993 994 996 998 999 1001 1003 1004 1006 1008 1009 1011 1013 1015 1016 1018 1020</table2>
+      <table3>0 14 28 42 55 69 83 97 111 124 138 151 164 177 190 203 215 227 239 251 263 274 285 296 306 316 326 335 345 354 363 371 380 388 396 403 411 418 425 432 439 446 452 458 465 471 477 483 488 494 500 505 510 516 521 526 532 537 542 547 552 557 562 567 572 577 582 586 591 596 600 605 609 614 618 623 627 631 636 640 644 648 652 656 660 663 667 671 674 678 681 685 688 691 695 698 701 704 707 710 713 716 719 722 725 728 730 733 736 738 741 743 746 749 751 753 756 758 761 763 765 768 770 772 775 777 779 781 784 786 788 790 792 795 797 799 801 803 805 807 810 812 814 816 818 820 822 824 826 828 830 833 835 837 839 841 843 845 847 849 851 853 855 857 859 860 862 864 866 868 870 872 874 876 878 880 882 883 885 887 889 891 893 895 897 898 900 902 904 906 908 909 911 913 915 917 918 920 922 924 925 927 929 931 933 934 936 938 940 941 943 945 947 948 950 952 954 955 957 959 960 962 964 966 967 969 971 972 974 976 977 979 981 983 984 986 988 989 991 993 994 996 998 999 1001 1003 1004 1006 1008 1009 1011 1013 1015 1016 1018 1020</table3>
+    </i32defalutPortraitGammaTab>
+    <f32SNModeOverExpTH description="control over exposure ratio at sn mode, luxSeg: 0~250 250~380 380~, and threshold range is 0.0 to 1.0.">
+      <luxSegNum>3</luxSegNum>
+      <luxSeg>0 250 380</luxSeg>
+      <threshold>0.0001 0.0001 0.0001</threshold>
+    </f32SNModeOverExpTH>
+    <f32FastSNModeOverExpTH description="control over exposure ratio at fastsn mode, luxSeg: 0~250 250~380 380~, and threshold range is 0.0 to 1.0.">
+      <luxSegNum>3</luxSegNum>
+      <luxSeg>0 250 380</luxSeg>
+      <threshold>0.0001 0.0001 0.0001</threshold>
+    </f32FastSNModeOverExpTH>
+    <f32HDRModeOverExpTH description="control over exposure ratio at hdr mode, luxSeg: 0~250 250~380 380~, and threshold range is 0.0 to 1.0.">
+      <luxSegNum>3</luxSegNum>
+      <luxSeg>0 250 380</luxSeg>
+      <threshold>0.0001 0.0001 0.0001</threshold>
+    </f32HDRModeOverExpTH>
+    <f32LLHDRModeOverExpTH description="control over exposure ratio at llhdr mode, luxSeg: 0~250 250~380 380~, and threshold range is 0.0 to 1.0.">
+      <luxSegNum>3</luxSegNum>
+      <luxSeg>0 250 380</luxSeg>
+      <threshold>0.0001 0.0001 0.0001</threshold>
+    </f32LLHDRModeOverExpTH>
+    <f32HDRLiteModeOverExpTH description="control over exposure ratio at hdrlite mode, luxSeg: 0~250 250~380 380~, and threshold range is 0.0 to 1.0.">
+      <luxSegNum>3</luxSegNum>
+      <luxSeg>0 250 380</luxSeg>
+      <threshold>0.0001 0.0001 0.0001</threshold>
+    </f32HDRLiteModeOverExpTH>
+  </Preprocess>
+  <Alignment>
+    <bForceMerge>0</bForceMerge>
+    <downScaleLevel>4</downScaleLevel>
+    <globalminCornor>100</globalminCornor>
+    <DeleteFrameParam>
+        <i32DeleteFrameEnable>1</i32DeleteFrameEnable>
+		<i32DeleteFrameInBandingEnable>1</i32DeleteFrameInBandingEnable>
+        <DeleteFrameSensitivity>
+            <f32SNModeOverExpMotionSens description="range is [0, 1], the higher the value, the harder to delete frame, default value is 1.0f.">1</f32SNModeOverExpMotionSens>
+            <f32FastSNModeOverExpMotionSens>1</f32FastSNModeOverExpMotionSens>
+            <f32HDRModeOverExpMotionSens>0.05</f32HDRModeOverExpMotionSens>
+            <f32LLHDRModeOverExpMotionSens>0.05</f32LLHDRModeOverExpMotionSens>
+            <f32HDRLiteModeOverExpMotionSens>0.22</f32HDRLiteModeOverExpMotionSens>
+            <f32HDRSportModeOverExpMotionSens>0.015</f32HDRSportModeOverExpMotionSens>
+			<f32bandingSNModeOverExpMotionSens>1</f32bandingSNModeOverExpMotionSens>
+			<f32bandingFastSNModeOverExpMotionSens>1</f32bandingFastSNModeOverExpMotionSens>
+			<f32bandingHDRModeOverExpMotionSens>0.003</f32bandingHDRModeOverExpMotionSens>
+			<f32bandingLLHDRModeOverExpMotionSens>0.003</f32bandingLLHDRModeOverExpMotionSens>
+			<f32bandingHDRLiteModeOverExpMotionSens>0.003</f32bandingHDRLiteModeOverExpMotionSens>
+			<f32bandingHDRSportModeOverExpMotionSens>0.003</f32bandingHDRSportModeOverExpMotionSens>
+        </DeleteFrameSensitivity>
+    </DeleteFrameParam>
+    <LocalDRLossParam>
+      <i32OverExpPortraitLocalDRLossEnable>1</i32OverExpPortraitLocalDRLossEnable>
+      <i32HDRLocalDRLossEnable>0</i32HDRLocalDRLossEnable>
+      <i32SNSLocalDRLossEnable>0</i32SNSLocalDRLossEnable>
+      <fHDRLocalDRLossOverExpAreaTH description="range is [0, 10].">1.0</fHDRLocalDRLossOverExpAreaTH>
+      <fLLHDRLocalDRLossOverExpAreaTH description="range is [0, 10].">1.0</fLLHDRLocalDRLossOverExpAreaTH>
+    </LocalDRLossParam>
+    <PatchMatchParam>
+      <i32PatchMatchDisMCEnable>1</i32PatchMatchDisMCEnable>
+      <i32PatchMatchThreadEnable>1</i32PatchMatchThreadEnable>
+      <f32PatchMatchDisMCOverExpAreaTh description="range is [0, 20.0].">0</f32PatchMatchDisMCOverExpAreaTh>
+      <i32PatchMatchMappingModeByLumaShade description="0: close mapping, 1: clip image maxvalue to 16383">1</i32PatchMatchMappingModeByLumaShade>
+    </PatchMatchParam>
+    <MotionModeParam>
+      <fOverExpMotionPortraitTh description="range is [0, 1], control portrait scene choose motion mode, default value is 0.125f.">0.125</fOverExpMotionPortraitTh>
+      <fOverExpMotionNormalTh description="range is [0, 1], control nonportrait scene choose motion mode, default value is 0.32f.">0.26</fOverExpMotionNormalTh>
+    </MotionModeParam>
+  </Alignment>
+  <Inpainting>
+    <HDRInpaintingEnable>0</HDRInpaintingEnable>
+    <SNSInpaintingEnable>0</SNSInpaintingEnable>
+    <InpaintingFillmaskAreaThres>3000</InpaintingFillmaskAreaThres>
+    <InpaintingPreProcessLocalDRAreaTh description="range is [0, 20].">10.0</InpaintingPreProcessLocalDRAreaTh>
+    <InpaintingOptimizationEnable>1</InpaintingOptimizationEnable>
+    <UseInpaintingBayerOrRGB description="default is 0, 0: inpainting run in kRGGB bayer pattern, 1: inpainting run in RGB pattern">0</UseInpaintingBayerOrRGB>
+    <InpaintingExterIterationsNum>5</InpaintingExterIterationsNum>
+    <InpaintingInterRSTimesMax>10</InpaintingInterRSTimesMax>
+    <InpaintingInterRSTimesMin>5</InpaintingInterRSTimesMin>
+  </Inpainting>
+  <Face>
+    <SNMode>
+        <Outdoor>
+            <f32MaxLab description="control face max bright in lab domain, range is 0.1 to 0.9.">0.25</f32MaxLab>
+            <f32MinLab description="control face min bright in lab domain, range is 0.1 to 0.9.">0.15</f32MinLab>
+            <f32HalfMinLab description="control face halfmin bright in lab domain, range is 0.1 to 0.9.">0.1</f32HalfMinLab>
+            <i32LabLuxIndexL description="control face LuxIndexL,LuxIndexL for maxlab">300</i32LabLuxIndexL>
+            <i32LabLuxIndexH description="control face LuxIndexH,LuxIndexH for minlab">500</i32LabLuxIndexH>
+            <f32FaceBrightRatioMin description="control face f32FaceBrightRatioMin">0.15</f32FaceBrightRatioMin>
+            <f32FaceBrightRatioMax description="control face f32FaceBrightRatioMax">0.25</f32FaceBrightRatioMax>
+            <FaceDiffAdjust description="control Face Contrast, luxSeg: 0~200 200~280 280~350 350~, and enhanceRatio range is 0.0 to 1.0.">
+              <luxSegNum>4</luxSegNum>
+              <luxSeg>0 200 280 350</luxSeg>
+              <enhanceRatio>0.0 0.4 0.6 0.7</enhanceRatio>
+            </FaceDiffAdjust>
+        </Outdoor>
+        <Indoor>
+            <f32MaxLab description="control face max bright in lab domain, range is 0.1 to 0.9.">0.25</f32MaxLab>
+            <f32MinLab description="control face min bright in lab domain, range is 0.1 to 0.9.">0.15</f32MinLab>
+            <f32HalfMinLab description="control face halfmin bright in lab domain, range is 0.1 to 0.9.">0.1</f32HalfMinLab>
+            <i32LabLuxIndexL description="control face LuxIndexL,LuxIndexL for maxlab">300</i32LabLuxIndexL>
+            <i32LabLuxIndexH description="control face LuxIndexH,LuxIndexH for minlab">500</i32LabLuxIndexH>
+            <f32FaceBrightRatioMin description="control face f32FaceBrightRatioMin">0.15</f32FaceBrightRatioMin>
+            <f32FaceBrightRatioMax description="control face f32FaceBrightRatioMax">0.25</f32FaceBrightRatioMax>
+            <FaceDiffAdjust description="control Face Contrast, luxSeg: 0~200 200~280 280~350 350~, and enhanceRatio range is 0.0 to 1.0.">
+              <luxSegNum>4</luxSegNum>
+              <luxSeg>0 200 280 350</luxSeg>
+              <enhanceRatio>0.0 0.4 0.6 0.7</enhanceRatio>
+            </FaceDiffAdjust>
+        </Indoor>
+        <Night>
+            <f32MaxLab description="control face max bright in lab domain, range is 0.1 to 0.9.">0.25</f32MaxLab>
+            <f32MinLab description="control face min bright in lab domain, range is 0.1 to 0.9.">0.15</f32MinLab>
+            <f32HalfMinLab description="control face halfmin bright in lab domain, range is 0.1 to 0.9.">0.1</f32HalfMinLab>
+            <i32LabLuxIndexL description="control face LuxIndexL,LuxIndexL for maxlab">300</i32LabLuxIndexL>
+            <i32LabLuxIndexH description="control face LuxIndexH,LuxIndexH for minlab">500</i32LabLuxIndexH>
+            <f32FaceBrightRatioMin description="control face f32FaceBrightRatioMin">0.15</f32FaceBrightRatioMin>
+            <f32FaceBrightRatioMax description="control face f32FaceBrightRatioMax">0.25</f32FaceBrightRatioMax>
+            <FaceDiffAdjust description="control Face Contrast, luxSeg: 0~200 200~280 280~350 350~, and enhanceRatio range is 0.0 to 1.0.">
+              <luxSegNum>4</luxSegNum>
+              <luxSeg>0 200 280 350</luxSeg>
+              <enhanceRatio>0.0 0.4 0.6 0.7</enhanceRatio>
+            </FaceDiffAdjust>
+        </Night>
+        <Sunset>
+            <f32MaxLab description="control face max bright in lab domain, range is 0.1 to 0.9.">0.25</f32MaxLab>
+            <f32MinLab description="control face min bright in lab domain, range is 0.1 to 0.9.">0.15</f32MinLab>
+            <f32HalfMinLab description="control face halfmin bright in lab domain, range is 0.1 to 0.9.">0.1</f32HalfMinLab>
+            <i32LabLuxIndexL description="control face LuxIndexL,LuxIndexL for maxlab">300</i32LabLuxIndexL>
+            <i32LabLuxIndexH description="control face LuxIndexH,LuxIndexH for minlab">500</i32LabLuxIndexH>
+            <f32FaceBrightRatioMin description="control face f32FaceBrightRatioMin">0.15</f32FaceBrightRatioMin>
+            <f32FaceBrightRatioMax description="control face f32FaceBrightRatioMax">0.25</f32FaceBrightRatioMax>
+            <FaceDiffAdjust description="control Face Contrast, luxSeg: 0~200 200~280 280~350 350~, and enhanceRatio range is 0.0 to 1.0.">
+              <luxSegNum>4</luxSegNum>
+              <luxSeg>0 200 280 350</luxSeg>
+              <enhanceRatio>0.0 0.4 0.6 0.7</enhanceRatio>
+            </FaceDiffAdjust>
+        </Sunset>
+        <Market>
+            <f32MaxLab description="control face max bright in lab domain, range is 0.1 to 0.9.">0.25</f32MaxLab>
+            <f32MinLab description="control face min bright in lab domain, range is 0.1 to 0.9.">0.15</f32MinLab>
+            <f32HalfMinLab description="control face halfmin bright in lab domain, range is 0.1 to 0.9.">0.1</f32HalfMinLab>
+            <i32LabLuxIndexL description="control face LuxIndexL,LuxIndexL for maxlab">300</i32LabLuxIndexL>
+            <i32LabLuxIndexH description="control face LuxIndexH,LuxIndexH for minlab">500</i32LabLuxIndexH>
+            <f32FaceBrightRatioMin description="control face f32FaceBrightRatioMin">0.15</f32FaceBrightRatioMin>
+            <f32FaceBrightRatioMax description="control face f32FaceBrightRatioMax">0.25</f32FaceBrightRatioMax>
+            <FaceDiffAdjust description="control Face Contrast, luxSeg: 0~200 200~280 280~350 350~, and enhanceRatio range is 0.0 to 1.0.">
+              <luxSegNum>4</luxSegNum>
+              <luxSeg>0 200 280 350</luxSeg>
+              <enhanceRatio>0.0 0.4 0.8 0.8</enhanceRatio>
+            </FaceDiffAdjust>
+        </Market>        
+    </SNMode>
+    <DayTimeMode>
+        <Outdoor>
+            <f32MaxLab description="control face max bright in lab domain, range is 0.1 to 0.9.">0.25</f32MaxLab>
+            <f32MinLab description="control face min bright in lab domain, range is 0.1 to 0.9.">0.15</f32MinLab>
+            <f32HalfMinLab description="control face halfmin bright in lab domain, range is 0.1 to 0.9.">0.1</f32HalfMinLab>
+            <i32LabLuxIndexL description="control face LuxIndexL,LuxIndexL for maxlab">300</i32LabLuxIndexL>
+            <i32LabLuxIndexH description="control face LuxIndexH,LuxIndexH for minlab">500</i32LabLuxIndexH>
+            <f32FaceBrightRatioMin description="control face f32FaceBrightRatioMin">0.15</f32FaceBrightRatioMin>
+            <f32FaceBrightRatioMax description="control face f32FaceBrightRatioMax">0.25</f32FaceBrightRatioMax>
+            <FaceDiffAdjust description="control Face Contrast, luxSeg: 0~200 200~280 280~350 350~, and enhanceRatio range is 0.0 to 1.0.">
+              <luxSegNum>4</luxSegNum>
+              <luxSeg>0 200 280 350</luxSeg>
+              <enhanceRatio>0.0 0.4 0.6 0.7</enhanceRatio>
+            </FaceDiffAdjust>
+        </Outdoor>
+        <Indoor>
+            <f32MaxLab description="control face max bright in lab domain, range is 0.1 to 0.9.">0.25</f32MaxLab>
+            <f32MinLab description="control face min bright in lab domain, range is 0.1 to 0.9.">0.15</f32MinLab>
+            <f32HalfMinLab description="control face halfmin bright in lab domain, range is 0.1 to 0.9.">0.1</f32HalfMinLab>
+            <i32LabLuxIndexL description="control face LuxIndexL,LuxIndexL for maxlab">300</i32LabLuxIndexL>
+            <i32LabLuxIndexH description="control face LuxIndexH,LuxIndexH for minlab">500</i32LabLuxIndexH>
+            <f32FaceBrightRatioMin description="control face f32FaceBrightRatioMin">0.15</f32FaceBrightRatioMin>
+            <f32FaceBrightRatioMax description="control face f32FaceBrightRatioMax">0.25</f32FaceBrightRatioMax>
+            <FaceDiffAdjust description="control Face Contrast, luxSeg: 0~200 200~280 280~350 350~, and enhanceRatio range is 0.0 to 1.0.">
+              <luxSegNum>4</luxSegNum>
+              <luxSeg>0 200 280 350</luxSeg>
+              <enhanceRatio>0.0 0.4 0.8 0.8</enhanceRatio>
+            </FaceDiffAdjust>
+        </Indoor>
+        <Night>
+            <f32MaxLab description="control face max bright in lab domain, range is 0.1 to 0.9.">0.25</f32MaxLab>
+            <f32MinLab description="control face min bright in lab domain, range is 0.1 to 0.9.">0.15</f32MinLab>
+            <f32HalfMinLab description="control face halfmin bright in lab domain, range is 0.1 to 0.9.">0.1</f32HalfMinLab>
+            <i32LabLuxIndexL description="control face LuxIndexL,LuxIndexL for maxlab">300</i32LabLuxIndexL>
+            <i32LabLuxIndexH description="control face LuxIndexH,LuxIndexH for minlab">500</i32LabLuxIndexH>
+            <f32FaceBrightRatioMin description="control face f32FaceBrightRatioMin">0.15</f32FaceBrightRatioMin>
+            <f32FaceBrightRatioMax description="control face f32FaceBrightRatioMax">0.25</f32FaceBrightRatioMax>
+            <FaceDiffAdjust description="control Face Contrast, luxSeg: 0~200 200~280 280~350 350~, and enhanceRatio range is 0.0 to 1.0.">
+              <luxSegNum>4</luxSegNum>
+              <luxSeg>0 200 280 350</luxSeg>
+              <enhanceRatio>0.0 0.4 0.6 0.7</enhanceRatio>
+            </FaceDiffAdjust>
+        </Night>
+        <Sunset>
+            <f32MaxLab description="control face max bright in lab domain, range is 0.1 to 0.9.">0.25</f32MaxLab>
+            <f32MinLab description="control face min bright in lab domain, range is 0.1 to 0.9.">0.15</f32MinLab>
+            <f32HalfMinLab description="control face halfmin bright in lab domain, range is 0.1 to 0.9.">0.1</f32HalfMinLab>
+            <i32LabLuxIndexL description="control face LuxIndexL,LuxIndexL for maxlab">300</i32LabLuxIndexL>
+            <i32LabLuxIndexH description="control face LuxIndexH,LuxIndexH for minlab">500</i32LabLuxIndexH>
+            <f32FaceBrightRatioMin description="control face f32FaceBrightRatioMin">0.15</f32FaceBrightRatioMin>
+            <f32FaceBrightRatioMax description="control face f32FaceBrightRatioMax">0.25</f32FaceBrightRatioMax>
+            <FaceDiffAdjust description="control Face Contrast, luxSeg: 0~200 200~280 280~350 350~, and enhanceRatio range is 0.0 to 1.0.">
+              <luxSegNum>4</luxSegNum>
+              <luxSeg>0 200 280 350</luxSeg>
+              <enhanceRatio>0.0 0.4 0.6 0.7</enhanceRatio>
+            </FaceDiffAdjust>
+        </Sunset>
+        <Market>
+            <f32MaxLab description="control face max bright in lab domain, range is 0.1 to 0.9.">0.25</f32MaxLab>
+            <f32MinLab description="control face min bright in lab domain, range is 0.1 to 0.9.">0.15</f32MinLab>
+            <f32HalfMinLab description="control face halfmin bright in lab domain, range is 0.1 to 0.9.">0.1</f32HalfMinLab>
+            <i32LabLuxIndexL description="control face LuxIndexL,LuxIndexL for maxlab">300</i32LabLuxIndexL>
+            <i32LabLuxIndexH description="control face LuxIndexH,LuxIndexH for minlab">500</i32LabLuxIndexH>
+            <f32FaceBrightRatioMin description="control face f32FaceBrightRatioMin">0.15</f32FaceBrightRatioMin>
+            <f32FaceBrightRatioMax description="control face f32FaceBrightRatioMax">0.25</f32FaceBrightRatioMax>
+            <FaceDiffAdjust description="control Face Contrast, luxSeg: 0~200 200~280 280~350 350~, and enhanceRatio range is 0.0 to 1.0.">
+              <luxSegNum>4</luxSegNum>
+              <luxSeg>0 200 280 350</luxSeg>
+              <enhanceRatio>0.0 0.4 0.6 0.7</enhanceRatio>
+            </FaceDiffAdjust>
+        </Market>        
+    </DayTimeMode>
+  </Face>
+  <Portrait>
+    <SNMode>
+        <Outdoor>
+            <f32PortraitAdjust description="Degree of portrait adjustment,range from 0(No adjust) to 1000(Max adjust)">1000</f32PortraitAdjust>
+            <f32ContrastLevel description="Degree of face contrast level, range from 0 (No adjust) to 1 (Max adjust)">1</f32ContrastLevel>
+            <f32ChromaLevel description="Degree of face skin tone chroma, range from 0 (Low chroma) to 1 (High chroma)">0.3</f32ChromaLevel>
+        </Outdoor>
+        <Indoor>
+            <f32PortraitAdjust description="Degree of portrait adjustment,range from 0(No adjust) to 1000(Max adjust)">1000</f32PortraitAdjust>
+            <f32ContrastLevel description="Degree of face contrast level, range from 0 (No adjust) to 1 (Max adjust)">1</f32ContrastLevel>
+            <f32ChromaLevel description="Degree of face skin tone chroma, range from 0 (Low chroma) to 1 (High chroma)">0.3</f32ChromaLevel>
+        </Indoor>
+        <Night>
+            <f32PortraitAdjust description="Degree of portrait adjustment,range from 0(No adjust) to 1000(Max adjust)">1000</f32PortraitAdjust>
+            <f32ContrastLevel description="Degree of face contrast level, range from 0 (No adjust) to 1 (Max adjust)">1</f32ContrastLevel>
+            <f32ChromaLevel description="Degree of face skin tone chroma, range from 0 (Low chroma) to 1 (High chroma)">0.3</f32ChromaLevel>
+        </Night>
+        <Sunset>
+            <f32PortraitAdjust description="Degree of portrait adjustment,range from 0(No adjust) to 1000(Max adjust)">1000</f32PortraitAdjust>
+            <f32ContrastLevel description="Degree of face contrast level, range from 0 (No adjust) to 1 (Max adjust)">1</f32ContrastLevel>
+            <f32ChromaLevel description="Degree of face skin tone chroma, range from 0 (Low chroma) to 1 (High chroma)">0.3</f32ChromaLevel>
+        </Sunset>
+        <Market>
+            <f32PortraitAdjust description="Degree of portrait adjustment,range from 0(No adjust) to 1000(Max adjust)">1000</f32PortraitAdjust>
+            <f32ContrastLevel description="Degree of face contrast level, range from 0 (No adjust) to 1 (Max adjust)">1</f32ContrastLevel>
+            <f32ChromaLevel description="Degree of face skin tone chroma, range from 0 (Low chroma) to 1 (High chroma)">0.3</f32ChromaLevel>
+        </Market>        
+    </SNMode>
+    <DayTimeMode>
+        <Outdoor>
+            <f32PortraitAdjust description="Degree of portrait adjustment,range from 0(No adjust) to 1000(Max adjust)">1000</f32PortraitAdjust>
+            <f32ContrastLevel description="Degree of face contrast level, range from 0 (No adjust) to 1 (Max adjust)">1</f32ContrastLevel>
+            <f32ChromaLevel description="Degree of face skin tone chroma, range from 0 (Low chroma) to 1 (High chroma)">0.3</f32ChromaLevel>
+        </Outdoor>
+        <Indoor>
+            <f32PortraitAdjust description="Degree of portrait adjustment,range from 0(No adjust) to 1000(Max adjust)">1000</f32PortraitAdjust>
+            <f32ContrastLevel description="Degree of face contrast level, range from 0 (No adjust) to 1 (Max adjust)">1</f32ContrastLevel>
+            <f32ChromaLevel description="Degree of face skin tone chroma, range from 0 (Low chroma) to 1 (High chroma)">0.3</f32ChromaLevel>
+        </Indoor>
+        <Night>
+            <f32PortraitAdjust description="Degree of portrait adjustment,range from 0(No adjust) to 1000(Max adjust)">1000</f32PortraitAdjust>
+            <f32ContrastLevel description="Degree of face contrast level, range from 0 (No adjust) to 1 (Max adjust)">1</f32ContrastLevel>
+            <f32ChromaLevel description="Degree of face skin tone chroma, range from 0 (Low chroma) to 1 (High chroma)">0.3</f32ChromaLevel>
+        </Night>
+        <Sunset>
+            <f32PortraitAdjust description="Degree of portrait adjustment,range from 0(No adjust) to 1000(Max adjust)">1000</f32PortraitAdjust>
+            <f32ContrastLevel description="Degree of face contrast level, range from 0 (No adjust) to 1 (Max adjust)">1</f32ContrastLevel>
+            <f32ChromaLevel description="Degree of face skin tone chroma, range from 0 (Low chroma) to 1 (High chroma)">0.3</f32ChromaLevel>
+        </Sunset>
+        <Market>
+            <f32PortraitAdjust description="Degree of portrait adjustment,range from 0(No adjust) to 1000(Max adjust)">1000</f32PortraitAdjust>
+            <f32ContrastLevel description="Degree of face contrast level, range from 0 (No adjust) to 1 (Max adjust)">1</f32ContrastLevel>
+            <f32ChromaLevel description="Degree of face skin tone chroma, range from 0 (Low chroma) to 1 (High chroma)">0.3</f32ChromaLevel>
+        </Market>        
+    </DayTimeMode>    
+  </Portrait>
+  <RGB2Luma>
+    <RGB2LmaxRGB description="Coefficient of maxRGB">0.25</RGB2LmaxRGB>
+    <RGB2LR description="Coefficient of R">0.1875</RGB2LR>
+    <RGB2LG description="Coefficient of G">0.375</RGB2LG>
+    <RGB2LB description="Coefficient of B">0.1875</RGB2LB>
+  </RGB2Luma>
+  <Ltm>
+    <f32ColorCorrection description="control corlor correction strength, range is 1.0 to 2.0.">1.0</f32ColorCorrection>
+    <f32GlobalBeta description="control gtm strength, range is 0.1 to 0.9.">0.5</f32GlobalBeta>
+    <f32LocalBeta description="control ltm strength, range is 0.1 to 0.9.">0.25</f32LocalBeta>
+    <f32LceBeta description="control lce strength, range is 0.1 to 0.9.">0.6</f32LceBeta>
+    <i32LtmDarkTh description="pixel in gamma space darker than this value is dark area, default value is 25.">35</i32LtmDarkTh>
+    <i32LtmShadowTh description="pixel in gamma space between darkth and shadingth is shadow area">80</i32LtmShadowTh>
+    <i32LtmHighLightTh description="pixel in gamma space brighter than highlight area is highlight area">225</i32LtmHighLightTh>
+    <i32LtmLtmblockNum description="divide the the whole img into n*n blcoks when ltm">20</i32LtmLtmblockNum>
+    <i32LtmLceblockNum description="divide the the whole img into n*n blcoks when lce">10</i32LtmLceblockNum>
+    <i32LtmbinBits>3</i32LtmbinBits>
+    <i32LtmdownScaleLevel>2</i32LtmdownScaleLevel>
+    <f32LtmExtremDarkRatio description="if the dark area percent bigger than the threshold, means the scene is too dark, the value should in [0.9, 1)">0.97</f32LtmExtremDarkRatio>
+    <f32LtmExtremBrightRatio description=" if the highlight area is bigger than the threshold, means the scene is too bright, , the value should in [0.9, 1)">1.0</f32LtmExtremBrightRatio>
+    <GTMControlParam>
+      <Portrait>
+        <SNMode>
+            <Outdoor description="the pixel darkTh will mapping to is cal by slope * darkPercent + bias">
+                <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>50</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>130</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+            </Outdoor>
+            <Indoor>
+                <Slope>
+                    <DARK>20</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>80</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>20</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>230</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+            </Indoor>
+          <Night>
+            <Slope>
+                    <DARK>20</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>60</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>20</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>10</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Night>
+          <Sunset>
+            <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>80</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>230</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Sunset>
+          <Market>
+            <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>90</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>230</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.3</HIGH_LIGHT>
+                    <LAST>0.3</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Market>
+          <f32DarkAreaGamma description="Increase dark area bright, the range is 1.0f to 2.4f, bigger gamma, will get brighter dark area">1.4</f32DarkAreaGamma>
+        </SNMode>
+        <DayTimeMode>
+            <Outdoor description="the pixel darkTh will mapping to is cal by slope * darkPercent + bias">
+                <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>100</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>220</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.5</HIGH_LIGHT>
+                    <LAST>-0.5</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>130</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+            </Outdoor>
+            <Indoor>
+                <Slope>
+                    <DARK>20</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>80</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>20</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>230</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+            </Indoor>
+          <Night>
+            <Slope>
+                    <DARK>20</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>60</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>20</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>10</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Night>
+          <Sunset>
+            <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>80</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>230</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Sunset>
+          <Market>
+            <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>90</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>230</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.3</HIGH_LIGHT>
+                    <LAST>0.3</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Market>
+          <f32DarkAreaGamma description="Increase dark area bright, the range is 1.0f to 2.4f, bigger gamma, will get brighter dark area">1.4</f32DarkAreaGamma>
+        </DayTimeMode>
+      </Portrait>
+      <NoPortrait>
+        <SNMode>
+            <Outdoor description="the pixel darkTh will mapping to is cal by slope * darkPercent + bias">
+                <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>50</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>130</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+            </Outdoor>
+            <Indoor>
+                <Slope>
+                    <DARK>10</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>60</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>10</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+            </Indoor>
+          <Night>
+            <Slope>
+                    <DARK>20</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>60</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>20</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>10</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Night>
+          <Sunset>
+            <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>60</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Sunset>
+          <Market>
+            <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>70</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Market>
+          <f32DarkAreaGamma description="Increase dark area bright, the range is 1.0f to 2.4f, bigger gamma, will get brighter dark area">1.4</f32DarkAreaGamma>
+        </SNMode>
+        <DayTimeMode>
+          <Outdoor description="the pixel darkTh will mapping to is cal by slope * darkPercent + bias">
+                <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>50</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>130</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+            </Outdoor>
+            <Indoor>
+                <Slope>
+                    <DARK>10</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>60</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>10</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+            </Indoor>
+          <Night>
+            <Slope>
+                    <DARK>20</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>60</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>20</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>10</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Night>
+          <Sunset>
+            <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>80</SHADOW>
+                    <HIGH_LIGHT>60</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Sunset>
+          <Market>
+            <Slope>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>70</HIGH_LIGHT>
+                </Slope>
+                <Bias>
+                    <DARK>30</DARK>
+                    <SHADOW>100</SHADOW>
+                    <HIGH_LIGHT>240</HIGH_LIGHT>
+                </Bias>
+                <AdjustRatio>
+                    <DARK>-0.2</DARK>
+                    <SHADOW>0.3</SHADOW>
+                    <HIGH_LIGHT>-0.2</HIGH_LIGHT>
+                    <LAST>-0.2</LAST>
+                </AdjustRatio>
+                <range>
+                    <DARK>
+                        <L>20</L>
+                        <H>40</H>
+                    </DARK>
+                    <SHADOW>
+                        <L>75</L>
+                        <H>180</H>
+                    </SHADOW>
+                    <HIGH_LIGHT>
+                        <L>140</L>
+                        <H>240</H>
+                    </HIGH_LIGHT>
+                </range>
+          </Market>
+          <f32DarkAreaGamma description="Increase dark area bright, the range is 1.0f to 2.4f, bigger gamma, will get brighter dark area">1.6</f32DarkAreaGamma>
+        </DayTimeMode>
+      </NoPortrait>
+      <SkyAreaParam>
+        <NightSky>
+          <Slope>
+            <DARK>30</DARK>
+            <SHADOW>80</SHADOW>
+            <HIGH_LIGHT>60</HIGH_LIGHT>
+          </Slope>
+          <Bias>
+            <DARK>30</DARK>
+            <SHADOW>100</SHADOW>
+            <HIGH_LIGHT>-100</HIGH_LIGHT>
+          </Bias>
+          <AdjustRatio>
+            <DARK>0.0</DARK>
+            <SHADOW>0.0</SHADOW>
+            <HIGH_LIGHT>0.0</HIGH_LIGHT>
+            <LAST>0.0</LAST>
+          </AdjustRatio>
+          <range>
+            <DARK>
+              <L>10</L>
+              <H>40</H>
+            </DARK>
+            <SHADOW>
+              <L>75</L>
+              <H>180</H>
+            </SHADOW>
+            <HIGH_LIGHT>
+              <L>140</L>
+              <H>255</H>
+            </HIGH_LIGHT>
+          </range>
+        </NightSky>
+        <DaySky>
+          <Slope>
+            <DARK>30</DARK>
+            <SHADOW>80</SHADOW>
+            <HIGH_LIGHT>60</HIGH_LIGHT>
+          </Slope>
+          <Bias>
+            <DARK>30</DARK>
+            <SHADOW>100</SHADOW>
+            <HIGH_LIGHT>-50</HIGH_LIGHT>
+          </Bias>
+          <AdjustRatio>
+            <DARK>0.0</DARK>
+            <SHADOW>0.0</SHADOW>
+            <HIGH_LIGHT>0.0</HIGH_LIGHT>
+            <LAST>0.0</LAST>
+          </AdjustRatio>
+          <range>
+            <DARK>
+              <L>10</L>
+              <H>40</H>
+            </DARK>
+            <SHADOW>
+              <L>75</L>
+              <H>180</H>
+            </SHADOW>
+            <HIGH_LIGHT>
+              <L>140</L>
+              <H>255</H>
+            </HIGH_LIGHT>
+          </range>
+        </DaySky>
+        <CAIXIA>
+          <Slope>
+            <DARK>30</DARK>
+            <SHADOW>80</SHADOW>
+            <HIGH_LIGHT>60</HIGH_LIGHT>
+          </Slope>
+          <Bias>
+            <DARK>30</DARK>
+            <SHADOW>100</SHADOW>
+            <HIGH_LIGHT>-10</HIGH_LIGHT>
+          </Bias>
+          <AdjustRatio>
+            <DARK>0.0</DARK>
+            <SHADOW>0.0</SHADOW>
+            <HIGH_LIGHT>0.0</HIGH_LIGHT>
+            <LAST>0.0</LAST>
+          </AdjustRatio>
+          <range>
+            <DARK>
+              <L>10</L>
+              <H>40</H>
+            </DARK>
+            <SHADOW>
+              <L>75</L>
+              <H>180</H>
+            </SHADOW>
+            <HIGH_LIGHT>
+              <L>140</L>
+              <H>255</H>
+            </HIGH_LIGHT>
+          </range>
+        </CAIXIA>
+      </SkyAreaParam>
+      <GlareAreParam description="Glare are is defined as over exposure part of the ev0, only need to set bias.">
+        <Slope>
+            <DARK>30</DARK>
+            <SHADOW>80</SHADOW>
+            <HIGH_LIGHT>60</HIGH_LIGHT>
+          </Slope>
+          <Bias>
+            <DARK>30</DARK>
+            <SHADOW>100</SHADOW>
+            <HIGH_LIGHT>220</HIGH_LIGHT>
+          </Bias>
+          <AdjustRatio>
+            <DARK>0.0</DARK>
+            <SHADOW>0.0</SHADOW>
+            <HIGH_LIGHT>0.0</HIGH_LIGHT>
+            <LAST>0.0</LAST>
+          </AdjustRatio>
+          <range>
+            <DARK>
+              <L>10</L>
+              <H>40</H>
+            </DARK>
+            <SHADOW>
+              <L>75</L>
+              <H>180</H>
+            </SHADOW>
+            <HIGH_LIGHT>
+              <L>140</L>
+              <H>235</H>
+            </HIGH_LIGHT>
+          </range>
+      </GlareAreParam>
+      <OriginParam>
+        <Slope>
+          <DARK>0</DARK>
+          <SHADOW>0</SHADOW>
+          <HIGH_LIGHT>0</HIGH_LIGHT>
+        </Slope>
+        <Bias>
+          <DARK>25</DARK>
+          <SHADOW>75</SHADOW>
+          <HIGH_LIGHT>15</HIGH_LIGHT>
+        </Bias>
+        <AdjustRatio>
+          <DARK>0.0</DARK>
+          <SHADOW>0.0</SHADOW>
+          <HIGH_LIGHT>0.0</HIGH_LIGHT>
+          <LAST>0.0</LAST>
+        </AdjustRatio>
+        <range>
+          <DARK>
+            <L>0</L>
+            <H>0</H>
+          </DARK>
+          <SHADOW>
+            <L>0</L>
+            <H>0</H>
+          </SHADOW>
+          <HIGH_LIGHT>
+            <L>0</L>
+            <H>0</H>
+          </HIGH_LIGHT>
+        </range>
+      </OriginParam>
+      <FaceAeParam description="In face scene, need to turn down the backGround brightness to improve contrast.">
+        <Slope>
+          <DARK>0</DARK>
+          <SHADOW>0</SHADOW>
+          <HIGH_LIGHT>0</HIGH_LIGHT>
+        </Slope>
+        <Bias>
+          <DARK>25</DARK>
+          <SHADOW>45</SHADOW>
+          <HIGH_LIGHT>60</HIGH_LIGHT>
+        </Bias>
+        <AdjustRatio>
+          <DARK>0.0</DARK>
+          <SHADOW>0.0</SHADOW>
+          <HIGH_LIGHT>0.0</HIGH_LIGHT>
+          <LAST>0.0</LAST>
+        </AdjustRatio>
+        <range>
+          <DARK>
+            <L>10</L>
+            <H>120</H>
+          </DARK>
+          <SHADOW>
+            <L>70</L>
+            <H>150</H>
+          </SHADOW>
+          <HIGH_LIGHT>
+            <L>80</L>
+            <H>255</H>
+          </HIGH_LIGHT>
+        </range>
+      </FaceAeParam>
+    </GTMControlParam>
+    <LTMBlocksParam>
+      <DayTimeMode>
+        <Outdoor>
+          <Portrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">-1.5</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">-1.5</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-1.5</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">-1.5</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-15.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-15.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </Portrait>
+          <NoPortrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">-0.5</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">-0.5</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-3</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">-3</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-10.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-15.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </NoPortrait>
+        </Outdoor>
+        <Indoor>
+          <Portrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">-1.5</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">-1.5</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-1.5</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">-1.5</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-15.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-15.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </Portrait>
+          <NoPortrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">-0.5</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">-0.5</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-1</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">-0.5</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-10.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-15.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">1.5</f32BetaHighLight_Last>
+          </NoPortrait>
+        </Indoor>
+        <Night>
+          <Portrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">-1.5</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">-1.5</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-1.5</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">-1.5</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-15.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-15.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </Portrait>
+          <NoPortrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">-0.5</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">-0.5</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-1</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">0.0</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-8.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">2.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </NoPortrait>
+        </Night>
+        <Sunset>
+          <Portrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">-1.5</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">-1.5</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-1.5</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">-1.5</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-15.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-15.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </Portrait>
+          <NoPortrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">-0.5</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">-0.5</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-3</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">-3</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-10.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-15.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </NoPortrait>
+        </Sunset>
+        <Market>
+          <Portrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">-1.5</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">-1.5</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-1.5</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">-1.5</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-15.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-15.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </Portrait>
+          <NoPortrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">-0.5</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">-0.5</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-0.5</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">1</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-8.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-8.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">2.0</f32BetaHighLight_Last>
+          </NoPortrait>
+        </Market>
+      </DayTimeMode>
+      <SNMode>
+        <Outdoor>
+          <Portrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">0.0</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">0.0</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-0.3</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">0.0</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-5.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-8.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </Portrait>
+          <NoPortrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">0.0</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">0.0</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-0.3</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">-0.0</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-5.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-8.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </NoPortrait>
+        </Outdoor>
+        <Indoor>
+          <Portrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">0.0</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">0.0</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-0.3</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">0.0</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-5.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-8.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </Portrait>
+          <NoPortrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">0.0</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">0.0</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-0.0</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">0.5</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-5.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-5.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">1.0</f32BetaHighLight_Last>
+          </NoPortrait>
+        </Indoor>
+        <Night>
+          <Portrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">0.0</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">0.0</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-0.3</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">0.0</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-5.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-8.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </Portrait>
+          <NoPortrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">0.0</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">0.0</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-0.3</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">0</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-8.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">2.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </NoPortrait>
+        </Night>
+        <Sunset>
+          <Portrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">0.0</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">0.0</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-0.3</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">0.0</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-5.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-8.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </Portrait>
+          <NoPortrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">0.0</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">0.0</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-0.3</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">-0.0</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-5.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-8.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </NoPortrait>
+        </Sunset>
+        <Market>
+          <Portrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">0.0</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">0.0</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">-0.3</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">0.0</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-5.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-8.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">0.0</f32BetaHighLight_Last>
+          </Portrait>
+          <NoPortrait>
+            <f32SZero description="control ZeroPoint StartPoint, suggest range -10 to 10">5.0</f32SZero>
+            <f32EZero description="control ZeroPoint EndPoint, suggest range -10 to 10">5.0</f32EZero>
+            <f32SDark description="control DarkPoint StartPoint, suggest range -10 to 10">0.2</f32SDark>
+            <f32EDark description="control DarkPoint EndPoint, suggest range -10 to 10">0.2</f32EDark>
+            <f32SShadow description="control ShadowPoint StartPoint, suggest range -10 to 10">0.0</f32SShadow>
+            <f32EShadow description="control ShadowPoint EndPoint, suggest range -10 to 10">0.0</f32EShadow>
+            <f32SHighLight description="control HighLightPoint StartPoint, suggest range -10 to 10">0</f32SHighLight>
+            <f32EHighLight description="control HighLightPoint EndPoint, suggest range -10 to 10">1</f32EHighLight>
+            <f32SLast description="control LastPoint StartPoint, suggest range -10 to 10">-5.0</f32SLast>
+            <f32ELast description="control LastPoint EndPoint, suggest range -10 to 10">-5.0</f32ELast>
+            <f32BetaZero_Dark description="control Zero-Dark range Beta, suggest range 0 to 1">1.0</f32BetaZero_Dark>
+            <f32BetaDark_Shadow description="control Dark-Shadow range Beta, suggest range 0 to 1">1.0</f32BetaDark_Shadow>
+            <f32BetaShadow_HighLight description="control Shadow-HighLight range Beta, suggest range 0 to 1">0.0</f32BetaShadow_HighLight>
+            <f32BetaHighLight_Last description="control HighLight-Last range Beta, suggest range 0 to 1">1.0</f32BetaHighLight_Last>
+          </NoPortrait>
+        </Market>
+      </SNMode>
+    </LTMBlocksParam>
+  </Ltm>
+  <Lce>
+    <SNMode>
+        <Portrait>
+            <Outdoor>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Outdoor>
+            <Indoor>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Indoor>
+            <Night>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Night>
+            <Sunset>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Sunset>
+            <Market>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Market>
+        </Portrait>
+        <NoPortrait>
+            <Outdoor>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Outdoor>
+            <Indoor>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Indoor>
+            <Night>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Night>
+            <Sunset>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Sunset>
+            <Market>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Market>
+        </NoPortrait>
+    </SNMode>
+    <DayTimeMode>
+        <Portrait>
+            <Outdoor>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Outdoor>
+            <Indoor>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Indoor>
+            <Night>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Night>
+            <Sunset>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Sunset>
+            <Market>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Market>
+        </Portrait>
+        <NoPortrait>
+            <Outdoor>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Outdoor>
+            <Indoor>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Indoor>
+            <Night>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Night>
+            <Sunset>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Sunset>
+            <Market>
+                <f32LceStrength description="control Globle LceStrength.">1.1</f32LceStrength>
+                <f32StrengthPosZero description="control ZeroPoint Positive Strength, range >=0">0.0</f32StrengthPosZero>
+                <f32StrengthNegZero description="control ZeroPoint Negative Strength, range >=0">0.0</f32StrengthNegZero>
+                <f32StrengthPosDark description="control DarkPoint Positive Strength, range >=0">0.2</f32StrengthPosDark>
+                <f32StrengthNegDark description="control DarkPoint Negative Strength, range >=0">0.2</f32StrengthNegDark>
+                <f32StrengthPosShadow description="control ShadowPoint Positive Strength, range >=0">0.3</f32StrengthPosShadow>
+                <f32StrengthNegShadow description="control ShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegShadow>
+                <f32StrengthPosHighShadow description="control HighShadowPoint Positive Strength, range >=0">0.1</f32StrengthPosHighShadow>
+                <f32StrengthNegHighShadow description="control HighShadowPoint Negative Strength, range >=0">0.1</f32StrengthNegHighShadow>
+                <f32StrengthPosHighLight description="control HighLightPoint Positive Strength, range >=0">0.0</f32StrengthPosHighLight>
+                <f32StrengthNegHighLight description="control HighLightPoint Negative Strength, range >=0">0.1</f32StrengthNegHighLight>
+                <f32StrengthPosLast description="control LastPoint Positive Strength, range >=0">0.0</f32StrengthPosLast>
+                <f32StrengthNegLast description="control LastPoint Negative Strength, range >=0">0.0</f32StrengthNegLast>
+            </Market>
+        </NoPortrait>
+    </DayTimeMode>
+  </Lce>
+  <DePurpleFringe>
+    <Enable>1</Enable>
+    <ProjectObject>
+        <MinArea>50</MinArea>
+        <PurPleObject>
+            <f32Intensity description="">1.0</f32Intensity>
+            <f32MinBrightness description="">0.01</f32MinBrightness>
+            <f32MinRedBlueRatio description="">0.15</f32MinRedBlueRatio>
+            <f32MaxRedBlueRatio description="">0.33</f32MaxRedBlueRatio>
+        </PurPleObject>
+        <BlueObject>
+            <LowSaturationArea>
+                <Hue>
+                    <L>200</L>
+                    <H>240</H>
+                </Hue>
+                <Saturation>
+                    <L>0.0</L>
+                    <H>0.2</H>
+                </Saturation>
+                <Value>
+                    <L>0.8</L>
+                    <H>1.0</H>
+                </Value>
+            </LowSaturationArea>
+            <HighSaturationArea>
+                <Hue>
+                    <L>200</L>
+                    <H>240</H>
+                </Hue>
+                <Saturation>
+                    <L>0.3</L>
+                    <H>0.9</H>
+                </Saturation>
+                <Value>
+                    <L>0.3</L>
+                    <H>1.0</H>
+                </Value>
+            </HighSaturationArea>
+        </BlueObject>
+    </ProjectObject>
+    <HighlightEdge>
+        <PlantHighlight>
+            <MinThreshold>0.6</MinThreshold>
+            <MinArea>1</MinArea>
+            <ExpendEdge>2</ExpendEdge>
+        </PlantHighlight>
+        <BuildingHighlight>
+            <MinThreshold>0.8</MinThreshold>
+            <MinArea>15</MinArea>
+            <ExpendEdge>1</ExpendEdge>
+        </BuildingHighlight>
+        <NormalHighlight>
+            <MinThreshold>0.8</MinThreshold>
+            <MinArea>15</MinArea>
+            <ExpendEdge>1</ExpendEdge>
+        </NormalHighlight>
+    </HighlightEdge>
+    <PurPleFringeParam>
+        <HasDarkFrame description="purple fringe params if has dark frame">
+            <Normal description="except for building and plant params">
+                <f32Intensity description="">0.5</f32Intensity>
+                <f32MinBrightness description="">0.8</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.15</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.33</f32MaxRedBlueRatio>
+            </Normal>
+            <NormalHighlight description="normal highlight">
+                <f32Intensity description="">1.0</f32Intensity>
+                <f32MinBrightness description="">0.1</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.5</f32MaxRedBlueRatio>
+                <f32BlueRemoveRatio description="">0.8</f32BlueRemoveRatio>
+            </NormalHighlight>
+            <Building>
+                <f32Intensity description="">0.8</f32Intensity>
+                <f32MinBrightness description="">0.7</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.15</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.33</f32MaxRedBlueRatio>
+            </Building>
+            <BuildingHighlight>
+                <f32Intensity description="">1.0</f32Intensity>
+                <f32MinBrightness description="">0.1</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.5</f32MaxRedBlueRatio>
+                <f32BlueRemoveRatio description="">0.8</f32BlueRemoveRatio>
+            </BuildingHighlight>
+            <Plant>
+                <f32Intensity description="">1.0</f32Intensity>
+                <f32MinBrightness description="">0.5</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.1</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.8</f32MaxRedBlueRatio>
+            </Plant>
+            <PlantHighlight>
+                <f32Intensity description="">1.0</f32Intensity>
+                <f32MinBrightness description="">0.01</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.5</f32MaxRedBlueRatio>
+                <f32BlueRemoveRatio description="">0.9</f32BlueRemoveRatio>
+            </PlantHighlight>
+            <BuildingSky description="building and sky intersection">
+                <f32Intensity description="">1.0</f32Intensity>
+                <f32MinBrightness description="">0.1</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.1</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.7</f32MaxRedBlueRatio>
+            </BuildingSky>
+        </HasDarkFrame>
+        <NotHasDarkFrame description="purple fringe params if has not dark frame">
+            <Normal description="except for building and plant params">
+                <f32Intensity description="">0.05</f32Intensity>
+                <f32MinBrightness description="">0.9</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.15</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.33</f32MaxRedBlueRatio>
+            </Normal>
+            <NormalHighlight description="normal highlight">
+                <f32Intensity description="">0.3</f32Intensity>
+                <f32MinBrightness description="">0.8</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.15</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.33</f32MaxRedBlueRatio>
+            </NormalHighlight>
+            <Building>
+                <f32Intensity description="">0.3</f32Intensity>
+                <f32MinBrightness description="">0.8</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.15</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.33</f32MaxRedBlueRatio>
+            </Building>
+            <BuildingHighlight>
+                <f32Intensity description="">0.5</f32Intensity>
+                <f32MinBrightness description="">0.5</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.15</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.33</f32MaxRedBlueRatio>
+            </BuildingHighlight>
+            <Plant>
+                <f32Intensity description="">0.5</f32Intensity>
+                <f32MinBrightness description="">0.5</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.15</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.33</f32MaxRedBlueRatio>
+            </Plant>
+            <PlantHighlight>
+                <f32Intensity description="">0.8</f32Intensity>
+                <f32MinBrightness description="">0.3</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.15</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.5</f32MaxRedBlueRatio>
+            </PlantHighlight>
+            <BuildingSky description="building and sky intersection">
+                <f32Intensity description="">1.0</f32Intensity>
+                <f32MinBrightness description="">0.1</f32MinBrightness>
+                <f32MinRedBlueRatio description="">0.15</f32MinRedBlueRatio>
+                <f32MaxRedBlueRatio description="">0.33</f32MaxRedBlueRatio>
+            </BuildingSky>
+        </NotHasDarkFrame>
+    </PurPleFringeParam>
+  </DePurpleFringe>
+  <XDRGainmap>
+    <DumpGainMap description="dump control for GainMap, convert to jpg">0</DumpGainMap>
+    <SNMode>
+        <Outdoor>
+            <GainKeypointNum>12</GainKeypointNum>
+            <AnchorX_Percent>0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 0.99 0.9999</AnchorX_Percent>
+            <AnchorY_manual>1 1 1 1 1 1.5 1.9 2.6 3.8 6.0 10.0 12.0</AnchorY_manual>
+            <Compress_Coef>0.8</Compress_Coef>
+            <maxGainRatio>0.03</maxGainRatio>
+            <maxGain>8.0</maxGain>
+        </Outdoor>
+        <Indoor>
+            <GainKeypointNum>12</GainKeypointNum>
+            <AnchorX_Percent>0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 0.99 0.9999</AnchorX_Percent>
+            <AnchorY_manual>1 1 1 1 1 1.5 1.9 2.6 3.8 6.0 10.0 12.0</AnchorY_manual>
+            <Compress_Coef>0.8</Compress_Coef>
+            <maxGainRatio>0.03</maxGainRatio>
+            <maxGain>8.0</maxGain>
+        </Indoor>
+        <Night>
+            <GainKeypointNum>12</GainKeypointNum>
+            <AnchorX_Percent>0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 0.99 0.9999</AnchorX_Percent>
+            <AnchorY_manual>1 1 1 1 1 1.5 1.9 2.6 3.8 6.0 10.0 12.0</AnchorY_manual>
+            <Compress_Coef>0.8</Compress_Coef>
+            <maxGainRatio>0.03</maxGainRatio>
+            <maxGain>8.0</maxGain>
+        </Night>
+        <Sunset>
+            <GainKeypointNum>12</GainKeypointNum>
+            <AnchorX_Percent>0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 0.99 0.9999</AnchorX_Percent>
+            <AnchorY_manual>1 1 1 1 1 1.5 1.9 2.6 3.8 6.0 10.0 12.0</AnchorY_manual>
+            <Compress_Coef>0.8</Compress_Coef>
+            <maxGainRatio>0.03</maxGainRatio>
+            <maxGain>8.0</maxGain>
+        </Sunset>
+        <Market>            
+            <GainKeypointNum>12</GainKeypointNum>
+            <AnchorX_Percent>0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 0.99 0.9999</AnchorX_Percent>
+            <AnchorY_manual>1 1 1 1 1 1.5 1.9 2.6 3.8 6.0 10.0 12.0</AnchorY_manual>
+            <Compress_Coef>0.8</Compress_Coef>
+            <maxGainRatio>0.03</maxGainRatio>
+            <maxGain>8.0</maxGain>
+        </Market>
+    </SNMode>
+    <DayTimeMode>
+        <Outdoor>
+            <GainKeypointNum>12</GainKeypointNum>
+            <AnchorX_Percent>0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 0.99 0.9999</AnchorX_Percent>
+            <AnchorY_manual>1 1 1 1 1 1.5 1.9 2.6 3.8 6.0 10.0 12.0</AnchorY_manual>
+            <Compress_Coef>0.8</Compress_Coef>
+            <maxGainRatio>0.03</maxGainRatio>
+            <maxGain>8.0</maxGain>
+        </Outdoor>
+        <Indoor>
+            <GainKeypointNum>12</GainKeypointNum>
+            <AnchorX_Percent>0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 0.99 0.9999</AnchorX_Percent>
+            <AnchorY_manual>1 1 1 1 1 1.5 1.9 2.6 3.8 6.0 10.0 12.0</AnchorY_manual>
+            <Compress_Coef>0.8</Compress_Coef>
+            <maxGainRatio>0.03</maxGainRatio>
+            <maxGain>8.0</maxGain>
+        </Indoor>
+        <Night>
+            <GainKeypointNum>12</GainKeypointNum>
+            <AnchorX_Percent>0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 0.99 0.9999</AnchorX_Percent>
+            <AnchorY_manual>1 1 1 1 1 1.5 1.9 2.6 3.8 6.0 10.0 12.0</AnchorY_manual>
+            <Compress_Coef>0.8</Compress_Coef>
+            <maxGainRatio>0.03</maxGainRatio>
+            <maxGain>8.0</maxGain>
+        </Night>
+        <Sunset>
+            <GainKeypointNum>12</GainKeypointNum>
+            <AnchorX_Percent>0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 0.99 0.9999</AnchorX_Percent>
+            <AnchorY_manual>1 1 1 1 1 1.5 1.9 2.6 3.8 6.0 10.0 12.0</AnchorY_manual>
+            <Compress_Coef>0.8</Compress_Coef>
+            <maxGainRatio>0.03</maxGainRatio>
+            <maxGain>8.0</maxGain>
+        </Sunset>
+        <Market>            
+            <GainKeypointNum>12</GainKeypointNum>
+            <AnchorX_Percent>0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.95 0.99 0.9999</AnchorX_Percent>
+            <AnchorY_manual>1 1 1 1 1 1.5 1.9 2.6 3.8 6.0 10.0 12.0</AnchorY_manual>
+            <Compress_Coef>0.8</Compress_Coef>
+            <maxGainRatio>0.03</maxGainRatio>
+            <maxGain>8.0</maxGain>
+        </Market>
+    </DayTimeMode>
+  </XDRGainmap>
+  <ColorsAdjust>
+    <CCMReleaseProtect>
+      <Enable>1</Enable>
+      <sigma>1500</sigma>
+      <maxShiftR>50000</maxShiftR>
+      <maxShiftG>15000</maxShiftG>
+      <maxShiftB>15000</maxShiftB>
+      <minShiftR>1000</minShiftR>
+      <minShiftG>1000</minShiftG>
+      <minShiftB>1000</minShiftB>
+    </CCMReleaseProtect>
+    <LocalCCM>
+      <Enable>1</Enable>
+    </LocalCCM>
+    <LUT3D>
+      <Enable>1</Enable>
+    </LUT3D>
+    <GainMapAdjust>
+      <Enable>1</Enable>
+    </GainMapAdjust>
+  </ColorsAdjust>
+</RAWHDR_ALG_Parameters>

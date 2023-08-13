@@ -1,0 +1,5 @@
+AE_FORCE_MODE = 0
+AE_EE = n
+AE_WHITE_LIST = t
+com.tencent.mm
+com.ss.android.ugc.aweme

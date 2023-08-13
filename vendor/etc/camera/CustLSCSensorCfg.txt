@@ -1,0 +1,2 @@
+Maxinum number of sensors: 8
+IMX663PD2242_MIPI_RAW

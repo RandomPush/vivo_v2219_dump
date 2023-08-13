@@ -1,0 +1,35 @@
+{
+    "comment": {
+        "magnificationFactor":      "moon magnification factor, default 6.0 for 1x night, 6.0 for 2x night, 4.0 for 3.5x night",
+        "occlusionFusionThreshold": "la la la",
+        "luminanceMaxRatio":        "la la la",
+        "rGainCoef": "moon red gain coefficient, used to change moon color, default 1.2 for all sensor",
+        "bGainCoef": "moon blue gain coefficient, used to change moon color, default 0.8 for all sensor"
+    },
+
+    "version": "0.0.2",
+
+    "moon": {
+        "config_on_1x": {
+            "maxMagnificationFactor": 6.0,
+            "occlusionFusionThreshold": 0.50,
+            "luminanceMaxRatio": 0.6875,
+            "rGainCoef": 1.20,
+            "bGainCoef": 0.80
+        },
+        "config_on_2x": {
+            "maxMagnificationFactor": 4.0,
+            "occlusionFusionThreshold": 0.50,
+            "luminanceMaxRatio": 0.6025,
+            "rGainCoef": 1.20,
+            "bGainCoef": 0.80
+        },
+        "config_on_3x": {
+            "maxMagnificationFactor": 3.0,
+            "occlusionFusionThreshold": 0.50,
+            "luminanceMaxRatio": 0.5425,
+            "rGainCoef": 1.20,
+            "bGainCoef": 0.80
+        }
+    }
+}

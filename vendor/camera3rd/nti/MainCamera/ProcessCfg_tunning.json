@@ -1,0 +1,113 @@
+{
+    "hdrMotion": {
+        "ainrCfg": {
+            "shortGainThrold":	1000,
+            "delevThrold":	-1.5
+        }
+    },
+    "HDR": {
+        "ainrCfg": {
+            "ISOThrold":	100000
+        }
+    },
+    "supernight": {
+        "ainrCfg": {
+            "Enable":	1
+        },
+        "mfainrCfg": {
+            "Enable":	1,
+            "ShortGainISOThrold":	7000,
+            "InputFrameMax":  10,
+            "InputFrameMin":  5
+        },
+        "aihdrCfg": {
+            "Enable":	0,
+            "ISOThrold":	10000
+        },
+        "ailtmCfg": {
+            "Enable":	1,
+            "ISOThrold":	100000
+        }
+    },
+    "fastnight": {
+        "ainrCfg": {
+            "Enable":	1
+        },
+        "mfainrCfg": {
+            "Enable":	1,
+            "ShortGainISOThrold":	10010,
+            "InputFrameMax":  10,
+            "InputFrameMin":  5
+        }
+    },
+    "superstar": {
+        "ainrCfg": {
+            "Enable":	1
+        }
+    },
+    "HDRLite": {
+        "ainrCfg": {
+            "shortGainThrold":	8,
+            "darkBoostGainRatioThrold":	2.5
+        },
+        "ainrCfgRoiRemosaic": {
+            "shortGainThrold": 8,
+            "darkBoostGainRatioThrold": 2.5
+        }
+    },
+    "LLHDR": {
+        "ainrCfg": {
+            "shortGainThrold":	16,
+            "darkBoostGainRatioThrold":	3.5
+        }
+    },
+    "HDRoff": {
+        "ainrCfg": {
+            "shortGainThrold":	32,
+            "darkBoostGainRatioThrold":	6
+        }
+    },
+    "HDRsport": {
+        "mfnrMode": {
+            "isoBoundary0":	600,
+            "isoBoundary1":	2000,
+            "motionLevelBoundary":	3
+        }
+    },
+    "prebps": {
+        "ModeCfg": {
+            "expTimeThrold":	500,
+            "shortgainThrold":	120
+        }
+    },
+    "portraitToneMap": {
+        "ToneCfg": {
+            "outlineEnable": 1,
+            "portraitEnable":	1
+        }
+    },
+    "skySegment": {
+        "segCfg": {
+            "Enable": 1
+        }
+    },
+    "mfnr": {
+        "evmmDenoiseMode": 1
+    },
+    "cac": {
+        "Enable": 0
+    },
+    "lightspot": {
+        "Enable": 0
+    },
+    "ProRaw": {
+        "configObHDRSportMode": 1
+    },
+    "star": {
+        "configStarEffectFile": 1
+    },
+    "rgbdenoise": {
+        "Enable": 1
+    }
+
+}

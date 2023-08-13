@@ -1,0 +1,47 @@
+{
+  "networkInfo":
+  [
+      {
+          "comment_lensDirection": "0:horizontal, 1:vertical",
+          "lensDirection": 0,
+          "modelNum": 1,
+          "loopNum": 11,
+          "comment_platform": "0:MTK5, 1:MTK6, 5:QCOM",
+          "platform": 1,
+          "networkParam":
+          [
+              {
+                  "modelPath": "/vendor/camera3rd/nti/mt6985_1670902000966012.vdnn",
+                  "runtime": "neuron",
+                  "threadNum": 1,
+                  "frequency": 100,
+                  "comment_powermode": "0:Balanced, 1:Performance, 2:Saving, 3:Turbo",
+                  "powerMode": 3,
+                  "sessionName": "raft-stereo",
+                  "inputNode": ["input/0", "input/1", "LoopInit", "LoopIncrement", "LoopNum", "ConstantValue"],
+                  "outputNode": ["out1", "out2", "out3", "out4", "out5", "slice/1182"]
+              }
+          ]
+      },
+      {
+          "lensDirection": 1,
+          "modelNum": 1,
+          "loopNum": 11,
+          "platform": 1,
+          "networkParam":
+          [
+              {
+                  "modelPath": "/vendor/camera3rd/nti/mt6985_1670902000966012.vdnn",
+                  "runtime": "neuron",
+                  "threadNum": 1,
+                  "frequency": 100,
+                  "comment_powermode": "0:Balanced, 1:Performance, 2:Saving, 3:Turbo",
+                  "powerMode": 3,
+                  "sessionName": "raft-stereo",
+                  "inputNode": ["input/0", "input/1", "LoopInit", "LoopIncrement", "LoopNum", "ConstantValue"],
+                  "outputNode": ["out1", "out2", "out3", "out4", "out5", "slice/1182"]
+              }
+          ]
+      }
+  ]
+}

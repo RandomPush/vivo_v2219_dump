@@ -1,0 +1,15 @@
+<!--
+Copyright 2022 vivo, Inc.
+All Rights Reserved
+Confidential and Proprietary - vivo, Inc.
+-->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.camera.provider</name>
+        <version>1</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>vendor.vcf/0</instance>
+        </interface>
+    </hal>
+</manifest>
