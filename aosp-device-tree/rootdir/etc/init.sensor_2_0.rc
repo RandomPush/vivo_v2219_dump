@@ -1,0 +1,11 @@
+# MTK platform .rc configure
+on post-fs-data
+    # calibration
+    mkdir /data/vendor/sensor 0774 system system
+    write /proc/bootprof "INIT:sensor"
+    # Sensor
+    chmod 0660 /dev/hf_manager
+    chown system system /dev/hf_manager
+
+    chmod 0664 /dev/vsen_sensorhub
+    chown system system /dev/vsen_sensorhub

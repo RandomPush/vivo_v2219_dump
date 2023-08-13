@@ -1,0 +1,24 @@
+<!--
+    Input:
+        system/libhidl/vintfdata/system_ext_manifest.default.xml
+        external/factory/hardware/interfaces/framework_compatibility_matrix.xml
+-->
+<manifest version="7.0" type="framework">
+    <hal format="hidl">
+        <name>vendor.factory.hardware.vivoatcmd</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IVivoAtcmd/default</fqname>
+    </hal>
+    <vendor-ndk>
+        <version>34</version>
+    </vendor-ndk>
+    <vendor-ndk>
+        <version>30</version>
+    </vendor-ndk>
+    <vendor-ndk>
+        <version>31</version>
+    </vendor-ndk>
+    <vendor-ndk>
+        <version>33</version>
+    </vendor-ndk>
+</manifest>
